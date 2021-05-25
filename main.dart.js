@@ -3293,7 +3293,7 @@ case 8:case 5:case 3:return P.an(null,s)}})
 return P.ao($async$A,s)}}
 U.b2.prototype={
 bb:function(a){var t,s,r,q,p
-J.fC(document.querySelector("#test"),window.navigator.appName)
+J.fC(document.querySelector("#test"),window.navigator.userAgent)
 t=H.x([38,40,37,39],u.D)
 s=window
 r=u.cE
