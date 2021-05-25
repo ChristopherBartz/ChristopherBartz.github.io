@@ -3040,7 +3040,7 @@ aH:function(a){var t=document.querySelector("#test"),s=window,r=u.bH.a(new U.cF(
 u.Z.a(null)
 W.c5(s,"keydown",r,!1,u.p)}}
 U.cF.prototype={
-$1:function(a){J.fg(this.a,J.aj(u.p.a(a).keyCode))},
+$1:function(a){J.fg(this.a,J.aj(u.p.a(a).charCode))},
 $S:24}
 Q.cG.prototype={
 a6:function(a){var t=0,s=P.bo(u.H)
