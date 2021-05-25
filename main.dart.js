@@ -1815,12 +1815,14 @@ this.b=null},d9:function d9(a,b){this.a=a
 this.b=b}},A={X:function X(a){this.a=a
 this.b=null},cQ:function cQ(a){this.a=a}},G={cS:function cS(){this.e=null}},U={
 fS:function(a){var t=u.z
-t=new U.b2(P.ey(t,t),a)
+t=new U.b2(P.ey(t,t),document.querySelector("#test"),a)
 t.bb(a)
 return t},
-b2:function b2(a,b){this.d=a
-this.a=b
-this.b=null},
+b2:function b2(a,b,c){var _=this
+_.d=a
+_.e=b
+_.a=c
+_.b=null},
 cU:function cU(a){this.a=a},
 cV:function cV(a){this.a=a}},Q={cW:function cW(){this.y=this.e=this.d=null}},R={bX:function bX(a,b,c){var _=this
 _.f=a
@@ -3292,41 +3294,34 @@ break
 case 8:case 5:case 3:return P.an(null,s)}})
 return P.ao($async$A,s)}}
 U.b2.prototype={
-bb:function(a){var t,s,r,q,p
-J.fC(document.querySelector("#test"),window.navigator.userAgent)
-t=H.x([38,40,37,39],u.D)
-s=window
-r=u.cE
-q=r.h("r(1)")
-p=r.h("aM<1>")
+bb:function(a){var t=H.x([38,40,37,39],u.D),s=window,r=u.cE,q=r.h("r(1)"),p=r.h("aM<1>")
 new P.aM(q.a(new U.cU(t)),new W.aI(s,"keydown",!1,r),p).aT(this.gX())
 s=window
 new P.aM(q.a(new U.cV(t)),new W.aI(s,"keyup",!1,r),p).aT(this.gbR())},
 A:function(a){return this.bV(u.L.a(a))},
-bV:function(a){var t=0,s=P.ap(u.H),r=this,q,p,o,n,m,l,k
+bV:function(a){var t=0,s=P.ap(u.H),r=this,q,p,o,n,m,l
 var $async$A=P.aq(function(b,c){if(b===1)return P.am(c,s)
 while(true)switch(t){case 0:t=u.S.b(a)?2:3
 break
-case 2:switch(window.navigator.appName){case"Firefox":q=a.which
-break
-case"Chrome":case"Opera":case"Safari":default:q=a.keyCode}p=r.d
-p.N(0,q,!0)
-o=p.q(0,38)===!0?-1:0
-if(p.q(0,40)===!0)++o
-n=p.q(0,37)===!0?-1:0
-if(p.q(0,39)===!0)++n
-p=r.a.e.y,m=p.length,l=u.z,k=0
-case 4:if(!(k<p.length)){t=6
-break}p[k].aV(n,o)
+case 2:J.fC(r.e,a.key)
+q=r.d
+q.N(0,a.keyCode,!0)
+p=q.q(0,38)===!0?-1:0
+if(q.q(0,40)===!0)++p
+o=q.q(0,37)===!0?-1:0
+if(q.q(0,39)===!0)++o
+q=r.a.e.y,n=q.length,m=u.z,l=0
+case 4:if(!(l<q.length)){t=6
+break}q[l].aV(o,p)
 t=7
-return P.cB(P.e0(C.m,l),$async$A)
-case 7:case 5:p.length===m||(0,H.cD)(p),++k
+return P.cB(P.e0(C.m,m),$async$A)
+case 7:case 5:q.length===n||(0,H.cD)(q),++l
 t=4
 break
 case 6:case 3:return P.an(null,s)}})
 return P.ao($async$A,s)},
 W:function(a){return this.bS(u.L.a(a))},
-bS:function(a){var t=0,s=P.ap(u.z),r=this,q,p
+bS:function(a){var t=0,s=P.ap(u.z),r=this,q
 var $async$W=P.aq(function(b,c){if(b===1)return P.am(c,s)
 while(true)switch(t){case 0:t=u.S.b(a)?2:3
 break
@@ -3337,9 +3332,7 @@ return P.cB(r.A(a),$async$W)
 case 7:case 5:++q
 t=4
 break
-case 6:switch(window.navigator.appName){case"Firefox":p=a.which
-break
-case"Chrome":case"Opera":case"Safari":default:p=a.keyCode}r.d.N(0,p,!1)
+case 6:r.d.N(0,a.keyCode,!1)
 case 3:return P.an(null,s)}})
 return P.ao($async$W,s)}}
 U.cU.prototype={
