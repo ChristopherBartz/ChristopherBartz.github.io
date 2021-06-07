@@ -15,25 +15,74 @@ html, body {
 }
 
 #field {
-  width: 150px;
-  height: 150px;
-  margin-top: 10%;
-  margin-left: auto;
-  margin-right: auto;
-
-  border: 1px solid black;
-
-  position: relative;
+  /* width: 200px;
+  height: 250px;
+   */
+  background-color: white;
+  /* grid-template-rows: repeat(auto-fit, 50px);
+  grid-template-columns: repeat(auto-fit, 50px); */
+}
+#camera {
+  width: 50%;
+  height: 50%;
   overflow: hidden;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  border: 2px solid black;
+  display: flex;
+  background-color: black;
+}
+#viewfield {
+  z-index: 5;
+}
+
+.gridfield{
+  position: absolute;
+  display: grid;
 }
 
 .astronaut {
   width: 50px;
   height: 50px;
 
-  background-image: url("resources/Astronaut.png");
+  background-image: url("resources/assets/Astronaut.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
   position: absolute;
+}
+
+.wall {
+  background-image: url("resources/assets/wall.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.path {
+  background-color: white;
+}
+
+.goal_unlocked {
+  background-image: url("resources/assets/ziel_open.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.goal_locked {
+  background-image: url("resources/assets/ziel_locked.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.viewblock{
+  background-color: black;
+}
+
+.discoveredview{
+  background-color: black;
+  opacity: 0.5;
 }

@@ -1,0 +1,21 @@
+{
+    "Levelname": "Level 1",
+    "GoalLocked": false,
+    "Level": {
+        "row1": ["Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
+        "row2": ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
+        "row3": ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
+        "row4": ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
+        "row5": ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
+        "row6": ["Wall","Path", "Path", "Start", "Path","Path","Wall"],
+        "row7": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row8": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row9": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row10": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row11": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row12": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row13": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row14": ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
+        "row15": ["Wall","Wall", "Wall", "Goal", "Wall","Wall","Wall"]
+    }
+}
