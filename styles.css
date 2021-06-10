@@ -80,9 +80,46 @@ html, body {
 
 .viewblock{
   background-color: black;
+  opacity: 1;
 }
 
 .discoveredview{
   background-color: black;
   opacity: 0.5;
+}
+
+.fadeout{
+  animation-name: fadetotransparent;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
+}
+.halffadeout{
+  animation-name: halffadetotransparent;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards;
+}
+
+
+.fadein{
+  animation-name: fadetoblack;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+  animation-fill-mode:forwards
+}
+
+@keyframes fadetotransparent{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+@keyframes halffadetotransparent{
+  from{opacity: 0.5;}
+  to{opacity: 0;}
+}
+
+@keyframes fadetoblack{
+  from{opacity: 0;}
+  to{opacity: 0.5;}
 }
