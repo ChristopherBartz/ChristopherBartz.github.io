@@ -19,6 +19,20 @@
     </div>
     <div id="viewfield" class="gridfield"></div>
   </div>
+  <script type="text/javascript">
+      function requestOrientationPermission(){
+          DeviceOrientationEvent.requestPermission()
+              .then(response => {
+                  if (response == 'granted') {
+                      window.addEventListener('deviceorientation', (e) => {
+
+                      })
+                  }
+              })
+              .catch(console.error)
+      }
+  </script>
+  <button id = "iosButton" onclick='requestOrientationPermission();'>Request orientation permission</button>
 
 </body>
 </html>

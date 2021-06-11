@@ -123,3 +123,8 @@ html, body {
   from{opacity: 0;}
   to{opacity: 0.5;}
 }
+
+#iosButton{
+  display: none;
+
+}
