@@ -136,7 +136,8 @@ html, body {
   background-color: #414141;
   color: white;
   border: none;
-  padding: 0, 5em, 0, 5em;
+    gap:20px;
+  padding: 0 2px 0 2px;
   width: 20%;
   min-width: 106px;
   height: 2em;
@@ -212,7 +213,7 @@ html, body {
     background-color: #000000;
     color: white;
     border: none;
-    padding: 0, 5em, 0, 5em;
+    padding: 0 2px 0 2px;
 
 }
 
