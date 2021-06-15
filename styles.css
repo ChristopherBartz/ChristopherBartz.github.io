@@ -1,130 +1,235 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+
 }
 
 #output {
-  padding: 20px;
-  text-align: center;
+    padding: 20px;
+    text-align: center;
 }
 
-#field {
-  /* width: 200px;
-  height: 250px;
-   */
-  background-color: white;
-  /* grid-template-rows: repeat(auto-fit, 50px);
-  grid-template-columns: repeat(auto-fit, 50px); */
+#level {
+    display: none;
+    background-image: url("resources/background/background.png");
+    background-repeat: no-repeat;
 }
+
 #camera {
-  width: 50%;
-  height: 50%;
-  overflow: hidden;
-  position: relative;
-  margin: auto;
-  margin-top: 10%;
-  border: 2px solid black;
-  display: flex;
-  background-color: black;
-}
-#viewfield {
-  z-index: 5;
+    display: none;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    border: 2px solid black;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
 }
 
-.gridfield{
-  position: absolute;
-  display: grid;
+#viewfield {
+    z-index: 5;
+}
+
+.gridfield {
+    position: absolute;
+    display: grid;
+}
+
+#background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-image: url("resources/background/background.png");
+    background-repeat: no-repeat;
+}
+
+#levelOverview {
+    display: none;
+}
+
+.levelBackground {
+    background-image: url("resources/background/background.png");
+    background-repeat: repeat;
 }
 
 .astronaut {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: 50px;
 
-  background-image: url("resources/assets/Astronaut.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-  position: absolute;
+    background-image: url("resources/assets/Astronaut.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
 }
 
 .wall {
-  background-image: url("resources/assets/wall.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
+    background-image: url("resources/assets/wall.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
 }
 
 .path {
-  background-color: white;
+    background-color: white;
+}
+
+.abyss {
+    visibility: hidden;
 }
 
 .goal_unlocked {
-  background-image: url("resources/assets/ziel_open.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
+    background-image: url("resources/assets/ziel_open.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
 }
 
 .goal_locked {
-  background-image: url("resources/assets/ziel_locked.svg");
+    background-image: url("resources/assets/ziel_locked.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.key {
+  background-image: url("resources/assets/Key.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
+
+  position: absolute;
 }
 
-.viewblock{
-  background-color: black;
-  opacity: 1;
+.menuButton {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #414141;
+  color: white;
+  border: none;
+  padding: 0, 5em, 0, 5em;
+  width: 20%;
+  min-width: 106px;
+  height: 2em;
 }
 
-.discoveredview{
-  background-color: black;
-  opacity: 0.5;
+#finished button {
+  width: 95% !important;
 }
 
-.fadeout{
-  animation-name: fadetotransparent;
-  animation-duration: 1s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
-}
-.halffadeout{
-  animation-name: halffadetotransparent;
-  animation-duration: 1s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards;
+.viewblock {
+    background-color: black;
+    opacity: 1;
 }
 
-
-.fadein{
-  animation-name: fadetoblack;
-  animation-duration: 1s;
-  animation-iteration-count:1;
-  animation-fill-mode:forwards
+.discoveredview {
+    background-color: black;
+    opacity: 0.5;
 }
 
-@keyframes fadetotransparent{
-  from{opacity: 1;}
-  to{opacity: 0;}
+.fadeout {
+    animation-name: fadetotransparent;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-@keyframes halffadetotransparent{
-  from{opacity: 0.5;}
-  to{opacity: 0;}
+.halffadeout {
+    animation-name: halffadetotransparent;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
-@keyframes fadetoblack{
-  from{opacity: 0;}
-  to{opacity: 0.5;}
+
+.fadein {
+    animation-name: fadetoblack;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards
 }
 
-#iosButton{
-  display: none;
+@keyframes fadetotransparent {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
 
+@keyframes halffadetotransparent {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadetoblack {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+#iosButton {
+    display: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0, 5em, 0, 5em;
+
+}
+
+#finished {
+    display: none;
+    z-index: 6;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    position: absolute;
+    padding: 5px;
+    gap: 10px;
+}
+
+.lineBreak {
+    white-space: pre-line;
 }
