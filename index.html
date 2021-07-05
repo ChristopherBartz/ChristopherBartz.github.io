@@ -15,7 +15,7 @@
 <body>
   <div id="background" class="background">
     <div id="startMenu" class="menu">
-      <button id="PlayButton" class="menuButton">PLAY</button>
+      <button id="PlayButton" class="menuButton" onclick='requestOrientationPermission();'>PLAY</button>
     </div>
 
     <div id="levelOverview" class="menu"></div>
@@ -34,7 +34,6 @@
         <button id="Next" class="menuButton">Nächstes Level</button>
       <button id="backToMenuButton" class="menuButton">MENÜ</button>
     </div>
-      <button id = "iosButton" onclick='requestOrientationPermission();'>Request orientation permission</button>
   </div>
 
   <script type="text/javascript">

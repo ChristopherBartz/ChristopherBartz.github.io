@@ -1,6 +1,5 @@
 {
   "Levelname": "Level 4",
-  "GoalLocked": false,
   "Level": {
     "row1": ["Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
     "row2": ["Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
