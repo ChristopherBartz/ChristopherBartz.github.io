@@ -82,6 +82,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
+    z-index: 1;
 }
 
 .path {
@@ -125,9 +126,18 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
-
   position: absolute;
 }
+
+.runner {
+    /* background-image: url("resources/assets/Key.svg"); */
+    background-color: red;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+ }
 
 .menuButton {
   font-size: 23px;
@@ -136,7 +146,8 @@ html, body {
   background-color: #414141;
   color: white;
   border: none;
-    gap:20px;
+  border-radius: 28px;
+  gap:20px;
   padding: 0 2px 0 2px;
   width: 20%;
   min-width: 106px;
@@ -162,6 +173,7 @@ html, body {
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .halffadeout {
@@ -169,6 +181,7 @@ html, body {
     animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 
@@ -176,7 +189,8 @@ html, body {
     animation-name: fadetoblack;
     animation-duration: 0.8s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 @keyframes fadetotransparent {
