@@ -130,8 +130,8 @@ html, body {
 }
 
 .runner {
-    /* background-image: url("resources/assets/Key.svg"); */
-    background-color: red;
+    background-image: url("resources/assets/monster_runner.svg");
+    /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
