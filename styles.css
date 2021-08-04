@@ -139,6 +139,16 @@ html, body {
     position: absolute;
  }
 
+.patroler {
+    background-image: url("resources/assets/monster_patroler.svg");
+    /* background-color: red; */
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+ }
+
 .menuButton {
   font-size: 23px;
   text-transform: uppercase;

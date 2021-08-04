@@ -1,6 +1,8 @@
 {
-    "Level1" : "../resources/level/level1.json",
-    "Level2": "../resources/level/level2.json",
-    "Level3": "../resources/level/level3.json",
-    "Level4": "../resources/level/level4.json"
+"Level": [
+    "../resources/level/level1.json",
+    "../resources/level/level2.json",
+    "../resources/level/level3.json",
+    "../resources/level/level4.json"
+    ]
 }
