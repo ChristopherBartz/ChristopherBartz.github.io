@@ -7,7 +7,7 @@
     ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall"],
     ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall"],
     ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall"],
+    ["Wall","Path", "Abyss", "Abyss", "Path","Path","LF-lt","Wall", "Wall", "Path", "Path","Path","Wall"],
     ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
     ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Wall","Wall"],
     ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],

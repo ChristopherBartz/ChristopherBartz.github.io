@@ -17,18 +17,16 @@ html, body {
 
 #level {
     display: none;
-    background-image: url("resources/background/background.png");
-    background-repeat: no-repeat;
+    flex-direction: column;
 }
 
 #camera {
-    display: none;
+    display: block;
     width: 50%;
     height: 50%;
     overflow: hidden;
     position: relative;
-    margin: auto;
-    margin-top: 10%;
+    margin: 0 auto auto;
     border: 2px solid black;
     background-color: black;
     justify-items: center;
@@ -46,9 +44,9 @@ html, body {
 
 #background {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -77,14 +75,6 @@ html, body {
     position: absolute;
 }
 
-.wall {
-    background-image: url("resources/assets/wall.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    z-index: 1;
-}
-
 .path {
     background-color: white;
 }
@@ -109,6 +99,21 @@ html, body {
     background-color: white;
 }
 
+.gridentity {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
+
+.lf-b {
+    background-image: url("resources/assets/laserfield/Laserfield_Bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;  
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -120,6 +125,15 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+.life {
+    background-image: url("resources/assets/extralife.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+  
+    position: absolute;
+  }
 
 .key {
   background-image: url("resources/assets/Key.svg");
@@ -255,6 +269,42 @@ html, body {
     gap: 10px;
 }
 
+.Overlay {
+    display: inline-grid;
+    width: 50%;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    background-color: white;
+    border-left: 1px solid black;
+    margin: auto auto 0;
+}
+
+.Overlay > div {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 23px;
+    height: 50px;
+    align-items: center;
+}
+
 .lineBreak {
     white-space: pre-line;
+}
+
+.level {
+    width: 100%;
+    height: 100%;
+}
+
+#lives {
+    display: grid;
+    grid-template-columns: 50px fit-content(100%);
+    justify-content: center;
+}
+
+#numberOfLives {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
