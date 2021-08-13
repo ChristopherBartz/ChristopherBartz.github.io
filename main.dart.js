@@ -5086,7 +5086,7 @@ cf:function(a){var s,r=this
 r.a=a
 r.sbn(P.ec(t.m))
 s=window.screen;(s&&C.F).sd7(s,!0)
-if(r.fr)P.kf(window.screen.orientation.lock("portrait"),t.z).bl(new O.eA(),t.P)
+if(r.fr)P.kf(window.screen.orientation.lock("portrait-primary"),t.z).bl(new O.eA(),t.P)
 r.ac()},
 ac:function(){var s=0,r=P.C(t.z),q=this,p
 var $async$ac=P.D(function(a,b){if(a===1)return P.z(b,r)
