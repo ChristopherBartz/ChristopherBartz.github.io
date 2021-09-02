@@ -1,32 +1,45 @@
 {
-    "Levelname": "Level 1",
-    "Level": [
-        ["Wall","Wall", "LF-b", "Wall", "Wall","Wall","Wall"],
-        ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Path", "Start", "Path","Path","Wall"],
-        ["Wall","Path", "Abyss", "Air-l-1", "Air-l-1","Air-l-1","Airvent-l"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
-        ["Wall","Wall", "Wall", "Goal", "Wall","Wall","Wall"]
-    ],
-    "Collectibles": {
-        "Key":[{"x":1.5,"y":2.7}],
-        "Life":[{"x":3.5,"y":2.7},{"x":5.5,"y":2.7}]
-    },
-    "Monster":{
-        "Runner":[
-            [{"x":5.0, "y":2.0},{"x":5.0, "y":8.0}]
-        ],
-        "Patroler":[
-            [{"x":3.5, "y":3.5},{"x":5.5,"y":5.5},{"x":3.5,"y":7.5},{"x":1.5,"y":5.5},{"x":3.5, "y":3.5}]
-        ]
-    }
+  "Level":[
+      [
+          "Wall",
+          "Start",
+          "Wall",
+          "Goal",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Wall"
+      ]
+  ],
+  "Collectibles":{
+  },
+  "Traps":{
+  },
+  "Monster":{
+  }
 }

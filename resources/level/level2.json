@@ -1,23 +1,82 @@
 {
-  "Levelname": "Level 2",
-  "Level": [
-    ["Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Start", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Abyss","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","LF-lt","Wall", "Wall", "Path", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall ","Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall", "Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Goal", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"]
-  ]
+  "Level":[
+      [
+          "Wall",
+          "Wall",
+          "Wall",
+          "Airvent-b",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Air-b-0.5",
+          "Abyss",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Air-b-0.5",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Goal"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Air-b-0.5",
+          "Path",
+          "Path",
+          "Abyss",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Start",
+          "Abyss",
+          "Air-b-0.5",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall"
+      ]
+  ],
+  "Collectibles":{
+      "Key":[
+          {
+              "x":5.5,
+              "y":1.5
+          }
+      ]
+  },
+  "Traps":{
+  },
+  "Monster":{
+  }
 }

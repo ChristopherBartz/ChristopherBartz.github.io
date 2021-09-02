@@ -1,41 +1,183 @@
+
 {
-  "Levelname": "Level 4",
-  "Level": [
-    ["Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Start", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Abyss","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall","Path", "Abyss", "Abyss", "Abyss","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Path","Path","Wall","Path", "Abyss", "Abyss", "Abyss","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Path","Path","Wall","Path", "Abyss", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Path","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Path","Wall","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Path", "Path", "Path","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall ","Wall","Wall","Wall","Path", "Path", "Path", "Path","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall", "Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Path","Path","Wall","Wall","Wall", "Wall", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Path", "Path","Wall","Wall","Wall", "Wall", "Wall", "Path","Path","Wall","Path", "Path", "Path", "Path","Abyss","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Abyss","Abyss", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall","Path", "Path", "Path", "Path","Abyss","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Abyss", "Abyss", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Abyss","Wall","Path", "Path", "Path", "Path","Abyss","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Abyss","Abyss","Wall", "Wall", "Wall", "Path","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall","Path", "Path", "Abyss", "Abyss","Path","Wall","Wall", "Wall", "Wall", "Path","Wall","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Wall","Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Path", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall","Path", "Path", "Abyss", "Path","Path","Path","Path", "Path", "Abyss", "Abyss","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Path","Wall","Path", "Path", "Abyss", "Path","Path","Wall","Wall", "Wall", "Abyss", "Abyss","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Path","Wall","Path", "Path", "Abyss", "Path","Path","Wall","Wall", "Wall", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Path","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Path","Path","Wall","Path", "Path", "Path", "Path","Abyss","Abyss","Abyss", "Wall", "Path", "Path","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall ","Wall","Wall","Wall","Path", "Wall", "Wall", "Path","Wall","Wall","Path", "Path", "Path", "Path","Abyss","Abyss","Abyss", "Wall", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall", "Wall","Wall","Wall","Path", "Path", "Path", "Path","Wall","Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Path", "Path", "Wall","Wall","Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Goal", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"]
-  ]
+    "Level":[
+        [
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Abyss",
+            "Abyss",
+            "Wall",
+            "Path",
+            "Start",
+            "Path",
+            "LF-r",
+            "Path",
+            "Path",
+            "Path",
+            "Path"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "LF-r",
+            "Path",
+            "Path"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Abyss",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "LF-r",
+            "Path",
+            "Path"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Abyss",
+            "Wall",
+            "Path",
+            "Goal",
+            "Path",
+            "Wall",
+            "Path",
+            "Path",
+            "Path",
+            "Path"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Abyss",
+            "Wall",
+            "Path",
+            "Path",
+            "Path",
+            "Wall",
+            "Path",
+            "LF-b",
+            "LF-b",
+            "Wall"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Abyss",
+            "Wall",
+            "Wall",
+            "Path",
+            "Wall",
+            "Wall",
+            "Path",
+            "Path",
+            "Path",
+            "Wall"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Abyss",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "LF-b",
+            "LF-b",
+            "LF-b",
+            "Path",
+            "Wall"
+        ],
+        [
+            "Wall",
+            "Abyss",
+            "Path",
+            "Path",
+            "Path",
+            "Wall",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Path",
+            "Wall"
+        ],
+        [
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall",
+            "Wall"
+        ]
+    ],
+    "Collectibles":{
+    },
+    "Traps":{
+    },
+    "Monster":{
+        "Runner":[
+            [
+                {
+                    "x":0.5,
+                    "y":3.9
+                },
+                {
+                    "x":4.5,
+                    "y":3.9
+                }
+            ],
+            [
+                {
+                    "x":4.5,
+                    "y":6.1
+                },
+                {
+                    "x":0.5,
+                    "y":6.1
+                }
+            ]
+        ]
+    }
 }

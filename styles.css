@@ -10,39 +10,17 @@ html, body {
 
 }
 
-#output {
-    padding: 20px;
-    text-align: center;
-}
-
-#level {
-    display: none;
-    flex-direction: column;
-}
-
-#camera {
-    display: block;
-    width: 50%;
-    height: 50%;
+.camera {
     overflow: hidden;
-    position: relative;
-    margin: 0 auto auto;
-    border: 2px solid black;
     background-color: black;
+    margin: 0 auto auto;
     justify-items: center;
-    align-items: center;
+    display: block;
+    position: relative;
+
 }
 
-#viewfield {
-    z-index: 5;
-}
-
-.gridfield {
-    position: absolute;
-    display: grid;
-}
-
-#background {
+.background {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -50,29 +28,74 @@ html, body {
     justify-content: center;
     align-items: center;
     align-content: center;
-
     background-image: url("resources/background/background.png");
     background-repeat: no-repeat;
 }
 
-#levelOverview {
-    display: none;
+.gridfield {
+    display: grid;
+    position: absolute;
 }
 
-.levelBackground {
-    background-image: url("resources/background/background.png");
+.menu {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+  }
+
+.buttonStyle {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #414141;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 28px;
+    min-height: 2em;
+    cursor: pointer;
+}
+  
+.menuButtonWidth {
+    width: 20%;
+    min-width: 200px;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.repeat {
     background-repeat: repeat;
 }
 
-.astronaut {
-    width: 50px;
-    height: 50px;
+.gridentity {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
 
+.astronaut {
     background-image: url("resources/assets/Astronaut.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
+}
+
+.wall {
+    background-image: url("resources/assets/wall.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
 }
 
 .path {
@@ -99,87 +122,113 @@ html, body {
     background-color: white;
 }
 
-.gridentity {
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    background-color: white;
-}
-
-.lf-b {
-    background-image: url("resources/assets/laserfield/Laserfield_Bottom.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    background-color: white;  
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  width: 100%;
-}
-
 .life {
     background-image: url("resources/assets/extralife.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-  
     position: absolute;
-  }
+}
+
+.lives {
+    background-image: url("resources/assets/extralife.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
 
 .key {
-  background-image: url("resources/assets/Key.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-  position: absolute;
+    background-image: url("resources/assets/Key.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+}
+
+.invert {
+    background-image: url("resources/assets/Invert_Control.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+}
+
+.speed {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+.visibility {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
 }
 
 .runner {
     background-image: url("resources/assets/monster_runner.svg");
-    /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
- }
+}
 
 .patroler {
     background-image: url("resources/assets/monster_patroler.svg");
-    /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
- }
+}
 
-.menuButton {
-  font-size: 23px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #414141;
-  color: white;
-  border: none;
-  border-radius: 28px;
-  gap:20px;
-  padding: 0 2px 0 2px;
-  width: 20%;
-  min-width: 106px;
-  height: 2em;
+.lasergateHorizontal {
+    background-image: url("resources/assets/Lasergate_Horizontal.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: absolute;
+}
+
+.lasergateVertical {
+    background-image: url("resources/assets/Lasergate_Vertical.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: absolute;
+}
+
+.leveltext {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+
+.timetext {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
 #finished button {
-  width: 95% !important;
+    width: 95% !important;
+}
+
+#pauseMenu button {
+    width: 95% !important;
+    min-width: 240px;
 }
 
 .viewblock {
@@ -244,67 +293,381 @@ html, body {
     }
 }
 
-#iosButton {
-    display: none;
-    font-size: 23px;
-    text-transform: uppercase;
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 0 2px 0 2px;
-
-}
-
-#finished {
-    display: none;
+.finished {
+    display: flex;
     z-index: 6;
     background-color: white;
     align-items: center;
     margin: auto;
     flex-direction: column;
     flex-wrap: wrap;
+    position: absolute;
+    padding: 5px;
+    gap: 10px;
+    min-width: 250px;
     max-width: 50%;
+}
+
+.pauseMenu {
+    display: flex;
+    z-index: 6;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
     position: absolute;
     padding: 5px;
     gap: 10px;
 }
 
-.Overlay {
-    display: inline-grid;
+.overlay {
     width: 50%;
-    grid-template-columns: repeat(3, calc(100% / 3));
-    background-color: white;
-    border-left: 1px solid black;
     margin: auto auto 0;
 }
 
-.Overlay > div {
+.fixedOverlay {
+    display: inline-grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    background-color: white;
+    box-sizing: border-box;
+    border-left: 1px solid black;
+    width: 100%;
+}
+
+.fixedOverlay > div {
     display: flex;
     justify-content: center;
     border-top: 1px solid black;
     border-right: 1px solid black;
     font-size: 23px;
-    height: 50px;
+    height: 55px;
     align-items: center;
+}
+
+.powerUpOverlay {
+    display: flex;
+    z-index: 6;
+    width: 70%;
+    position: absolute;
+}
+
+#powerUps > img {
+    background-color: white;
+    width: 50px;
+    height: 50px;
 }
 
 .lineBreak {
     white-space: pre-line;
 }
 
-.level {
+.numberPos{
+    bottom: 0;
+    left: 0;
+    position: absolute;   
+}
+
+.scrollBox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    overflow: auto;
+}
+
+#customlevelbox > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 260px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.editorOverview {
+    max-width: 60%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.customJsonLabel{
+    cursor: pointer;
+}
+
+.customOutBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: calc(30% - 30px);
+    height: 50%;
+}
+
+.customOut {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+.levelEditor{
+    display:flex;
+    overflow: auto;
     width: 100%;
     height: 100%;
 }
 
-#lives {
-    display: grid;
-    grid-template-columns: 50px fit-content(100%);
+.editorSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
+    margin: 5px;
 }
 
-#numberOfLives {
+.editorSetting{
     display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sectionLeft{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.sectionRight{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
+#settings > div{
+        width: 250px;
+}
+
+#settingsGrid > div {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;    
+    place-content: center;
+}
+
+.editorInput {
+    text-align: center;
+    width: 60px;
+    height: 35px;
+    border-radius: 10%;
+    border: 0;
+    margin-left: 5px;
+}
+
+.editorBox{
+    display: grid;
+    width: calc(50% - 20px);
+    max-height: 350px;
+    margin: 0 5px 0 10px;
+    overflow: auto;
+}
+
+.editorGrid{
+    display: grid;
+    justify-self: end;
+}
+
+.pathGrid{
+    width: 50px;
+    height: 50px;
+    border: 1px solid#414141;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.sidebarBox{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    min-height: 340px;
+    margin: 5px auto 5px 5px;
+}
+
+.flexBox{
+    display: flex;
+    margin:5px;
+    width:100%;
+}
+
+#selectedAndRemove > div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.editorInfo {
+    font-size: 14px;
+    max-width: 300px;
+    max-height: 50px;
+    background-color: lightgrey;
+    margin: 0 5px;
+    overflow: auto;
+}
+
+.placeableItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.editorItem{
+    width: 50px;
+    min-height: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.editorAbyss {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.dropdownBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+}
+
+.dropdown{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    background-color: #414141;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #414141;
+    border-bottom-left-radius: 28px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 28px;
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+}
+
+.lasergateSetting{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+#traps{
+    height: 105px;
+}
+
+.powerupSetting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.monsterSubmitWidth{
+    width: 40%;
+    height: 2em;
+}
+
+.monsterBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-self: flex-start;
+    width: 200px;
+    margin: 5px;
+}
+
+.monsterText {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 8px black;
+    font-size: x-large;
+    font-weight: 900;
+    cursor: default;
+}
+
+.editorOut {
+    width: 250px;
+    max-height: 350px;
+    position: absolute;
+    background-color: lightgrey;
+    overflow: auto;
+}
+
+.borderBotNoRad {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.imageOption {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+
+.absolut {
+    position: absolute;
+}
+
+.zindex5 {
+    z-index: 5;
+}
+
+.text {
+    font-size: 20px;
+    padding: 0 2px 0 2px;
+    color: white;
+    margin: 5px;
+}
+
+
+.backgroundGreen {
+    background-color: #00854a;
+}
+
+.backgroundLightgreen {
+    background-color: #99ceb7;
+}
+
+.size50 {
+    width: 50px;
+    height: 50px;
+}
+
+.size40 {
+    width: 40px;
+    height: 40px;
+}
+
+.alignCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
 }

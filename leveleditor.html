@@ -1,0 +1,218 @@
+<div id="backgroundEditor" class="menu">
+    <div id="settings" class="editorSection">
+        <div id="settingsGrid" class="editorSetting sectionLeft">
+            <div id="columnBox" class="buttonStyle">
+                <label id="columnsLabel" for="columns">
+                    Columns:
+                </label>
+                <input id="columns" class="editorInput" type="number" min="5" max="20" step="1" value="5">
+            </div>
+            <div id="rowBox" class="buttonStyle">
+                <label id="rowsLabel" for="rows">
+                    Rows:
+                </label>
+                <input id="rows" class="editorInput" type="number" min="5" max="20" step="1" value="5">
+            </div>
+
+        </div>
+        <div id="settingbuttons" class="editorSetting sectionRight">
+            <button id="generateLevel" class="buttonStyle">
+                Generate Field</button>
+            <button id="backToMenuButtonLevelEditor" class="buttonStyle">Overview</button>
+        </div>
+    </div>
+    <div id="editorView" class="editorSection hidden">
+        <div id="editorsection" class="editorBox">
+            <div id="editor" class="editorGrid grideditor">
+            </div>
+        </div>
+        <div id="editorsidebar" class="sidebarBox">
+            <div id="selectedAndRemove" class="flexBox">
+                <div id="currentItemBox" class="alignCenter">
+                    <label id="labelCurrentItem" class="text">
+                        Selected Item
+                    </label>
+                    <div id="currentSelectedItem" class="size50"></div>
+                </div>
+                <div id="BinBox" class="alignCenter">
+                    <label id="labelBin" class="text">
+                        Delete
+                    </label>
+                    <img src='resources/assets/delete.svg' id="Bin" class="size50">
+                </div>
+                <div id="infoBox">
+                    <label id="labelInfo" class="text">
+                        Info
+                    </label>
+                    <p id="info" class="editorInfo">
+                    </p>
+                </div>
+            </div>
+            <div id="placeableGrid" class="flexBox selector">
+                <div id="Start" class="placeableItem">
+                    <label id="labelStart" class="text">
+                        Start
+                    </label>
+                    <img src="resources/assets/Astronaut.svg" id="StartImg" class="backgroundGreen editorItem">
+                </div>
+                <div id="Goal" class="placeableItem">
+                    <label id="labelGoal" class="text">
+                        Goal
+                    </label>
+                    <img src="resources/assets/ziel_open.svg" id="GoalImg" class="editorItem">
+                </div>
+                <div id="Wall" class="placeableItem">
+                    <label id="labelWall" class="text">
+                        Wall
+                    </label>
+                    <img src="resources/assets/wall.svg" id="WallImg" class="editorItem">
+                </div>
+                <div id="Abyss" class="placeableItem">
+                    <label id="labelAbyss" class="text">
+                        Abyss
+                    </label>
+                    <div id="AbyssImg" class="editorAbyss"></div>
+                </div>
+                <div id="Check" class="placeableItem">
+                    <p id="labelCheckpoint" class="text">
+                        Checkpoint
+                    </p>
+                    <div id="CheckpointImg" class="backgroundGreen size50"></div>
+                </div>
+            </div>
+            <div id="dropDownPlaceable" class="flexBox hidden">
+                <div id="Laserfield" class="buttonStyle dropdownBox">
+                    <label id="laserfieldLabel" class="text">Laserfield:
+                    </label>
+                    <img src="resources/assets/laserfield/Laserfield_Bottom.svg" id="laserfieldSelect" class="size40">
+                    <div id="laserfieldDropdown" class="dropdown selector hidden">
+                    </div>
+                </div>
+                <div id="Airvent" class="buttonStyle dropdownBox">
+                    <label id="airventLabel" class="text">
+                        Airvent:
+                    </label>
+                    <img src="resources/assets/airstream/Airvent_Bottom.svg" id="airventSelect" class="size40">
+                    <div id="airstreamBox" class="dropdown hidden">
+                        <label id="airstreamLabel" for="airstream" class="text">
+                            Stream strenght:
+                        </label><input id="airstream" class="editorInput" type="number" min="0.5" max="2.0" step="0.1"
+                            value="1">
+                    </div>
+                    <div id="airventDropdown" class="dropdown selector hidden">
+                    </div>
+                </div>
+            </div>
+            <div id="traps" class="flexBox hidden">
+                <div id="Lasergate" class="placeableItem">
+                    <label id="labelLasergate" class="text">
+                        Lasergate
+                    </label>
+                    <img src="resources/assets/Lasergate_Horizontal.png" id="LasergateImg" class="editorItem">
+                </div>
+                <div id="lasergateSettings" class="lasergateSetting buttonStyle hidden">
+                    <div id='onBox' class="editorSection">
+                        <label id="onTime" for="on" class="text">
+                            On Time:
+                        </label>
+                        <input id="on" class="editorInput" type="number" min="1000" max="10000" step="100" value="2000">
+                    </div>
+                    <div id="offBox" class="editorSection">
+                        <label id="offTime" for="off" class="text">
+                            Off Time:
+                        </label>
+                        <input id="off" class="editorInput" type="number" min="2000" max="10000" step="100"
+                            value="3000">
+                    </div>
+                </div>
+            </div>
+
+            <div id="placeableItems" class="flexBox hidden">
+                <div id="absolutItems" class="flexBox selector">
+                    <div id="Key" class="placeableItem">
+                        <label id="labelKey" class="text">
+                            Key
+                        </label>
+                        <img src="resources/assets/Key.svg" id="KeyImg" class="editorItem">
+                    </div>
+                    <div id="Life" class="placeableItem">
+                        <label id="labelLife" class="text">
+                            Life
+                        </label>
+                        <img src="resources/assets/extralife.svg" id="LifeImg" class="editorItem">
+                    </div>
+                    <div id="Invert" class="placeableItem">
+                        <label id="labelInvert" class="text">
+                            Invert
+                        </label>
+                        <img src="resources/assets/Invert_Control.svg" id="InvertImg" class="editorItem">
+                    </div>
+                    <div id="Visibility-Up" class="placeableItem">
+                        <label id="labelVisibility-Up" class="text">
+                            ViewUp
+                        </label>
+                        <img src="resources/assets/bigger_viewfield.svg" id="Visibility-UpImg" class="editorItem">
+                    </div>
+                    <div id="Visibility-Down" class="placeableItem">
+                        <label id="labelVisibility-DownImg" class="text">
+                            ViewDown
+                        </label>
+                        <img src="resources/assets/smaller_viewfield.svg" id="Visibility-DownImg" class="editorItem">
+                    </div>
+                    <div id="Speed-Up" class="placeableItem">
+                        <label id="labelSpeed-Up" class="text">
+                            SpeedUp
+                        </label>
+                        <img src="resources/assets/fast.svg" id="Speed-UpImg" class="editorItem">
+                    </div>
+                    <div id="Speed-Down" class="placeableItem">
+                        <label id="labelSpeed-Down" class="text">
+                            SpeedDown
+                        </label>
+                        <img src="resources/assets/slow.svg" id="Speed-DownImg" class="editorItem">
+                    </div>
+                </div>
+
+            </div>
+            <div id="powerUps" class="placeableItem hidden">
+                <div id="powerUpBox" class="buttonStyle powerupSetting ">
+                    <div id="durationBox" class="editorSection">
+                        <label id="durationLabel" for="duration" class="text">Duration:</label>
+                        <input id="duration" class="editorInput" type="number" min="1000" max="10000" step="100"
+                            value="3000">
+                    </div>
+                    <div id="valueBox" class="editorSection hidden">
+                        <label id="valueLabel" for="valueInput" class="text"></label>
+                        <input id="valueInput" class="editorInput" type="number" min="2" max="10" step="1" value="5">
+                    </div>
+                </div>
+            </div>
+            <div id="MonsterSection" class="flexbox hidden">
+                <div id="Monster" class="monsterBox selector">
+                    <div id="Runner" class="placeableItem">
+                        <label id="labelRunner" class="text">
+                            Runner
+                        </label>
+                        <img src="resources/assets/monster_runner.svg" id="RunnerImg" class="size50">
+                    </div>
+                    <div id="Patroler" class="placeableItem">
+                        <label id="labelPatroler" class="text">
+                            Patroler
+                        </label>
+                        <img src="resources/assets/monster_patroler.svg" id="PatrolerImg" class="size50">
+                    </div>
+                </div>
+                <button id="PatrolSubmit" class="buttonStyle monsterSubmitWidth">Submit
+                    Patroler</button>
+            </div>
+        </div>
+    </div>
+    <div id="editorbutton" class="editorSection hidden">
+        <button id="stateBack" class="buttonStyle menuButtonWidth hidden">Back</button>
+        <button id="save" class="buttonStyle menuButtonWidth "></button>
+        <pre id="jsonOutput" class="editorOut hidden"></pre>
+        <button id="jsonGenerate" class="buttonStyle menuButtonWidth hidden"></button>
+        <button id="jsonCopy" class="buttonStyle menuButtonWidth hidden">Copy
+            JSON</button>
+    </div>
+</div>

@@ -1,68 +1,111 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
-    <title>Escape the Dark</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
-    <script defer src="main.dart.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+  <title>Escape the Dark</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <script defer src="main.dart.js"></script>
 </head>
 
 <body>
   <div id="background" class="background">
     <div id="startMenu" class="menu">
-      <button id="PlayButton" class="menuButton" onclick='requestOrientationPermission();'>PLAY</button>
+      <button id="PlayButton" class="buttonStyle menuButtonWidth" onclick='requestOrientationPermission();'>PLAY</button>
+      <button id="LevelEditorButton" class="buttonStyle menuButtonWidth hidden">LEVELEDITOR</button>
     </div>
 
-    <div id="levelOverview" class="menu"></div>
-
-    <div id="level" class="level">
-      <div id="levelOverlay" class="Overlay">
-        <div id="timer"></div>
-        <div id="lives">
-          <img src="resources/assets/extralife.svg" alt="Extralife" width="50" height="50">
-          <div id="numberOfLives"></div>
+    <div id="levelEditorBox" class="scrollBox hidden">
+      <div id='editorOverview' class="menu">
+        <div id="overviewSection" class="editorSection">
+          <button id="editorBack" class="buttonStyle menuButtonWidth backToMenu">Menu</button>
+          <button id="newLevel" class="buttonStyle menuButtonWidth">new Level</button>
         </div>
-        <div id="powerUps">
+        <div id="customlevelbox" class="menu"></div>
+        <div id="customLevelOutbox" class="customOutBox hidden">
+          <pre id="customOut" class="customOut"></pre>
+          <button id="customCopy" class="buttonStyle menuButtonWidth">Copy JSON</button>
+        </div>
+      </div>
+      <div id="levelEditor" class="levelEditor hidden"></div>
+    </div>
+    <div id="levelOverviewBox" class="scrollBox hidden">
+    <div id="levelOverview" class="menu "></div>
+    </div>
+    <div id="level" class="level hidden">
+      <div id="levelOverlay" class="overlay">
+        <div class="fixedOverlay">
+          <div id="timer"></div>
+          <div id="countableEntities">
+            <div id="lives" class="lives">
+              <div id="numberOfLives" class="numberPos"></div>
+            </div>
+            <img src="resources/assets/Key.svg" alt="" id="KeyOverlay" class="size50 hidden">
+          </div>
+          <div>
+            <button id="pauseButton" class="buttonStyle menuButtonWidth">Pause</button>
+          </div>
+        </div>
+        <div id="powerUps" class="powerUpOverlay">
+          <img src="resources/assets/bigger_viewfield.svg" alt="" id="bigger_viewfieldOverlay" class="hidden">
+          <img src="resources/assets/smaller_viewfield.svg" alt="" id="smaller_viewfieldOverlay"
+            class="hidden">
+          <img src="resources/assets/fast.svg" alt="" id="fastOverlay" class="hidden">
+          <img src="resources/assets/slow.svg" alt="" id="slowOverlay" class="hidden">
+          <img src="resources/assets/Invert_Control.svg" alt="" id="Invert_ControlOverlay" class="hidden">
         </div>
       </div>
 
-      <div id="camera" class = "camera">
-        <div id="levelBackground "class="gridfield levelBackground">
+
+      <div id="camera" class="camera">
+        <div id="levelBackground" class="gridfield background repeat">
         </div>
         <div id="field" class="gridfield">
-          <div id="player" class="astronaut"></div>
         </div>
-        <div id="viewfield" class="gridfield"></div>
-      
-      </div>
+        <div id="viewfield" class="zindex5 gridfield"></div>
 
+      </div>
     </div>
-    <div id="finished">
+
+    <div id="pauseMenu" class="pauseMenu hidden">
+      <p class="lineBreak">Paused</p>
+      <button id="Continue" class="buttonStyle menuButtonWidth">Continue</button>
+      <button id="LevelOverviewButton" class="buttonStyle menuButtonWidth">Levelselection</button>
+      <button id="BackToMenuButton2" class="backToMenu buttonStyle menuButtonWidth">Menu</button>
+    </div>
+
+    <div id="finished" class="finished hidden">
       <p id="finishedText" class="lineBreak"></p>
-      <button id="Again" class="menuButton">Nochmal Spielen</button>
-        <button id="Next" class="menuButton">Nächstes Level</button>
-      <button id="backToMenuButton" class="menuButton">MENÜ</button>
+      <button id="Again" class="buttonStyle menuButtonWidth">Play again</button>
+      <button id="Next" class="buttonStyle menuButtonWidth">Next level</button>
+      <button id="backToMenuButton" class="buttonStyle menuButtonWidth backToMenu">Menu</button>
     </div>
   </div>
 
   <script type="text/javascript">
-      function requestOrientationPermission(){
-          DeviceOrientationEvent.requestPermission()
-              .then(response => {
-                  if (response == 'granted') {
-                      window.addEventListener('deviceorientation', (e) => {
+    function requestOrientationPermission() {
+      if (navigator.userAgent.match('iPhone') ||
+        navigator.userAgent.match('iPad') ||
+        navigator.userAgent.match('iPod') || (navigator.userAgent.match('Mac') && navigator.maxTouchPoints > 0)) {
+        DeviceOrientationEvent.requestPermission()
+          .then(response => {
+            if (response == 'granted') {
+              window.addEventListener('deviceorientation', (e) => {
 
-                      })
-                  }
               })
-              .catch(console.error)
+            }
+          })
+          .catch(console.error)
       }
+
+    }
   </script>
 
 </body>
+
 </html>

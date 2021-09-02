@@ -1,41 +1,181 @@
 {
-  "Levelname": "Level 3",
-  "Level": [
-    ["Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Start", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Abyss","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall ","Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall", "Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Path","Path","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Path", "Path","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Abyss","Abyss", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Abyss", "Abyss", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Abyss","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Wall", "Wall", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Path", "Path", "Path","Path","Path","Path", "Path", "Wall", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Path","Path", "Path", "Path", "Wall","Path","Wall"],
-    ["Wall","Path", "Abyss", "Abyss", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Path","Path","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Path", "Path","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Path", "Path", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Abyss", "Abyss", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall ","Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Wall", "Wall","Wall","Wall","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Path", "Wall", "Path", "Path","Path","Path","Path", "Wall", "Wall", "Wall","Wall","Wall"],
-    ["Wall","Wall", "Wall", "Goal", "Wall","Wall","Wall","Wall", "Wall", "Wall", "Wall","Wall","Wall"]
-  ]
+  "Level":[
+      [
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Goal",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Start",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall"
+      ],
+      [
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Abyss",
+          "Abyss"
+      ],
+      [
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Abyss",
+          "Abyss"
+      ],
+      [
+          "Path",
+          "Abyss",
+          "Wall",
+          "Path",
+          "Path",
+          "Wall",
+          "Wall",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Abyss",
+          "Abyss"
+      ],
+      [
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Check",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Abyss",
+          "Abyss"
+      ],
+      [
+          "Abyss",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Wall",
+          "Wall",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss"
+      ],
+      [
+          "Abyss",
+          "Abyss",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss"
+      ]
+  ],
+  "Collectibles":{
+      "Key":[
+          {
+              "x":1.5,
+              "y":8.5
+          }
+      ],
+      "Life":[
+          {
+              "x":9.4,
+              "y":7.5
+          },
+          {
+              "x":6.5,
+              "y":1.5
+          },
+          {
+              "x":6.5,
+              "y":9.5
+          }
+      ]
+  },
+  "Traps":{
+      "Lasergate":[
+          {
+              "x":3,
+              "y":3.9,
+              "endx":4,
+              "endy":3.9,
+              "on":6000,
+              "off":4000
+          }
+      ]
+  },
+  "Monster":{
+  }
 }
+
