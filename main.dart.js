@@ -2483,12 +2483,12 @@ _.dx=!0},hq:function hq(a){this.a=a},hm:function hm(a,b){this.a=a
 this.b=b},ho:function ho(a,b){this.a=a
 this.b=b},hp:function hp(a,b){this.a=a
 this.b=b},hr:function hr(a){this.a=a},hs:function hs(){},ht:function ht(a){this.a=a},hu:function hu(a){this.a=a},hv:function hv(a){this.a=a},hn:function hn(){},
-nH:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=null,a4="#levelOverlay",a5="100%",a6="place-content",a7=new G.hI()
-a7.a=[]
+nH:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=null,a5="#levelOverlay",a6="100%",a7="place-content",a8=new G.hI()
+a8.a=[]
 s=window.localStorage
-if(s.getItem("times")!=null)a7.b=t.w.a(C.i.bj(0,s.getItem("times"),a3))
-else a7.b=[]
-a7.br()
+if(s.getItem("times")!=null)a8.b=t.w.a(C.i.bj(0,s.getItem("times"),a4))
+else a8.b=[]
+a8.br()
 if(!J.ab(window.navigator.userAgent,"iPhone"))if(!J.ab(window.navigator.userAgent,"Android"))if(!J.ab(window.navigator.userAgent,"iPad"))if(J.ab(window.navigator.userAgent,"Mac")){r=window.navigator.maxTouchPoints
 if(typeof r!=="number")return r.M()
 r=r>0}else r=!1
@@ -2496,55 +2496,70 @@ else r=!0
 else r=!0
 else r=!0
 q=document
-p=new O.iy(a7,r,q.querySelector("#startMenu"),q.querySelector("#levelOverview"),q.querySelector("#levelOverviewBox"),q.querySelector("#LevelEditorButton"),q.querySelector(a4),q.querySelector("#timer"),q.querySelector("#finishedText"),q.querySelector("#finished"),q.querySelector("#level"),q.querySelector("#pauseMenu"),q.querySelector("#logo"))
-p.aX()
-r=new B.fF(a7,p)
-o=new N.hR()
-if(!J.ab(window.navigator.userAgent,"iPhone"))if(!J.ab(window.navigator.userAgent,"Android"))if(!J.ab(window.navigator.userAgent,"iPad"))if(J.ab(window.navigator.userAgent,"Mac")){n=window.navigator.maxTouchPoints
-if(typeof n!=="number")return n.M()
-n=n>0}else n=!1
-else n=!0
-else n=!0
-else n=!0
-m=q.querySelector("#levelBackground")
-l=q.querySelector("#player")
-k=q.querySelector("#field")
-j=q.querySelector("#camera")
-i=q.querySelector("#viewfield")
-h=q.querySelector(a4)
-g=q.querySelector("#timer")
-f=q.querySelector("#numberOfLives")
-e=q.querySelector("#bigger_viewfieldOverlay")
-d=q.querySelector("#smaller_viewfieldOverlay")
-c=q.querySelector("#fastOverlay")
-b=q.querySelector("#slowOverlay")
-a=q.querySelector("#KeyOverlay")
-a0=q.querySelector("#Invert_ControlOverlay")
-a1=q.querySelector("#powerUps")
-if(n){a2=j.style
-a2.height=a5
-a2=j.style
-a2.width=a5
-a2=h.style
-a2.width=a5
-a2=a1.style
-a2.toString
-C.f.al(a2,C.f.ah(a2,a6),"start",a3)
-a2=a1.style
-a2.toString
-C.f.al(a2,C.f.ah(a2,"margin-left"),"1px",a3)
+p=q.querySelector("#startMenu")
+o=q.querySelector("#levelOverview")
+n=q.querySelector("#levelOverviewBox")
+m=q.querySelector("#LevelEditorButton")
+l=q.querySelector(a5)
+k=q.querySelector("#timer")
+j=q.querySelector("#finishedText")
+i=q.querySelector("#finished")
+h=q.querySelector("#level")
+g=q.querySelector("#pauseMenu")
+f=q.querySelector("#logo")
+e=new O.iy(a8,r,p,o,n,m,l,k,j,i,h,g,f)
+e.aX()
+d=q.querySelector("#PlayButton")
+f=f.style
+g=""+(C.b.t(d.offsetTop)-130)+"px"
+f.top=g
+r=new B.fF(a8,e)
+p=new N.hR()
+if(!J.ab(window.navigator.userAgent,"iPhone"))if(!J.ab(window.navigator.userAgent,"Android"))if(!J.ab(window.navigator.userAgent,"iPad"))if(J.ab(window.navigator.userAgent,"Mac")){o=window.navigator.maxTouchPoints
+if(typeof o!=="number")return o.M()
+o=o>0}else o=!1
+else o=!0
+else o=!0
+else o=!0
+n=q.querySelector("#levelBackground")
+m=q.querySelector("#player")
+l=q.querySelector("#field")
+k=q.querySelector("#camera")
+j=q.querySelector("#viewfield")
+i=q.querySelector(a5)
+h=q.querySelector("#timer")
+g=q.querySelector("#numberOfLives")
+f=q.querySelector("#bigger_viewfieldOverlay")
+c=q.querySelector("#smaller_viewfieldOverlay")
+b=q.querySelector("#fastOverlay")
+a=q.querySelector("#slowOverlay")
+a0=q.querySelector("#KeyOverlay")
+a1=q.querySelector("#Invert_ControlOverlay")
+a2=q.querySelector("#powerUps")
+if(o){a3=k.style
+a3.height=a6
+a3=k.style
+a3.width=a6
+a3=i.style
+a3.width=a6
+a3=a2.style
+a3.toString
+C.f.al(a3,C.f.ah(a3,a7),"start",a4)
+a3=a2.style
+a3.toString
+C.f.al(a3,C.f.ah(a3,"margin-left"),"1px",a4)
 q=q.styleSheets
 if(0>=q.length)return H.d(q,0)
-C.l.c5(t.q.a(q[0]),"#pauseButton","min-width: 106px !important")}else{q=j.style
+C.l.c5(t.q.a(q[0]),"#pauseButton","min-width: 106px !important")}else{q=k.style
 q.height="70%"
-q=j.style
+q=k.style
 q.width="70%"
-q=h.style
+q=i.style
 q.width="70%"
-q=a1.style
+q=a2.style
 q.toString
-C.f.al(q,C.f.ah(q,a6),"center",a3)}o.b=new T.hS(n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1)
-r.e=o
+C.f.al(q,C.f.ah(q,a7),"center",a4)}p.b=new T.hS(o,n,m,l,k,j,i,h,g,f,c,b,a,a0,a1,a2)
+r.e=p
 r.bt()}},O={K:function K(){},hB:function hB(a){this.a=a},ee:function ee(a){this.a=a},iy:function iy(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.a=a
 _.b=b
@@ -8753,24 +8768,19 @@ s.display="none"}else{s=document.querySelector("#Next").style
 s.display="inline"}J.bC(h.y,l)
 J.k(h.z).q(0,g)
 break}},
-aX:function(){var s=0,r=P.x(t.z),q=this,p,o,n
+aX:function(){var s=0,r=P.x(t.z),q=this,p,o
 var $async$aX=P.y(function(a,b){if(a===1)return P.u(b,r)
-while(true)switch(s){case 0:o=q.f
-n=J.B(o)
-if(!q.b)n.gw(o).q(0,"hidden")
-else n.gw(o).j(0,"hidden")
+while(true)switch(s){case 0:p=q.f
+o=J.B(p)
+if(!q.b)o.gw(p).q(0,"hidden")
+else o.gw(p).j(0,"hidden")
 J.k(q.z).j(0,"hidden")
 J.k(q.Q).j(0,"hidden")
 J.k(q.ch).j(0,"hidden")
 J.k(q.e).j(0,"hidden")
-o=q.c
-J.k(o).q(0,"hidden")
+J.k(q.c).q(0,"hidden")
 J.k(document.querySelector("#levelEditorBox")).j(0,"hidden")
-n=q.cx
-p=n.style
-o=""+(C.b.t(o.offsetTop)+20)+"px"
-p.top=o
-J.k(n).q(0,"hidden")
+J.k(q.cx).q(0,"hidden")
 return P.v(null,r)}})
 return P.w($async$aX,r)},
 aw:function(){var s=0,r=P.x(t.z),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b
