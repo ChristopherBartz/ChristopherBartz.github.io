@@ -5,9 +5,21 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
+h1{
+    font-size: 72px;
+    text-shadow: 10px 10px 10px #000000;
+    color: white;
+}
+
+h2{
+    color: white;
+    font-size: x-large;
+    text-shadow: 10px 10px 10px #000000;
 }
 
 .camera {
@@ -49,15 +61,29 @@ html, body {
 
 .buttonStyle {
     font-size: 23px;
-    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
     background-color: #414141;
     color: white;
-    border: none;
     margin: 5px;
     border-radius: 28px;
     min-height: 2em;
     cursor: pointer;
+    box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.8);
+    background:linear-gradient(to bottom, #5e5e5e 5%, #414141 100%);
+    border:1px solid #414141;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #414141 5%, #5e5e5e 100%);
+	background-color:#5e5e5e;
+}
+
+button:active {
+	position:relative;
+	top:1px;
 }
   
 .menuButtonWidth {
@@ -92,10 +118,8 @@ html, body {
 }
 
 .wall {
-    background-image: url("resources/assets/wall.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
+    position: relative;
+    z-index: 3;
 }
 
 .path {
@@ -178,6 +202,7 @@ html, body {
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
+    z-index: 2;
 }
 
 .patroler {
@@ -187,6 +212,7 @@ html, body {
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
+    z-index: 2;
 }
 
 .lasergateHorizontal {
@@ -195,6 +221,7 @@ html, body {
     background-size: 100% 100%;
     background-position: center center;
     position: absolute;
+    z-index: 1;
 }
 
 .lasergateVertical {
@@ -203,11 +230,14 @@ html, body {
     background-size: 100% 100%;
     background-position: center center;
     position: absolute;
+    z-index: 1;
 }
 
 .leveltext {
     font-size: 23px;
-    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
     align-items: center;
     color: white;
@@ -216,7 +246,9 @@ html, body {
 
 .timetext {
     font-size: 10px;
-    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
     color: white;
     margin: 0;
@@ -228,7 +260,10 @@ html, body {
 
 #pauseMenu button {
     width: 95% !important;
-    min-width: 240px;
+}
+
+#viewfield {
+    z-index: 5;
 }
 
 .viewblock {
@@ -293,32 +328,18 @@ html, body {
     }
 }
 
-.finished {
+.popupMenu {
     display: flex;
     z-index: 6;
     background-color: white;
     align-items: center;
-    margin: auto;
+    margin: 5px;
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    padding: 5px;
-    gap: 10px;
     min-width: 250px;
     max-width: 50%;
-}
-
-.pauseMenu {
-    display: flex;
-    z-index: 6;
-    background-color: white;
-    align-items: center;
-    margin: auto;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: absolute;
-    padding: 5px;
-    gap: 10px;
+    padding-bottom: 5px;
 }
 
 .overlay {
@@ -341,6 +362,9 @@ html, body {
     border-top: 1px solid black;
     border-right: 1px solid black;
     font-size: 23px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     height: 55px;
     align-items: center;
 }
@@ -394,6 +418,16 @@ html, body {
 
 .customJsonLabel{
     cursor: pointer;
+}
+
+.customButton:active{
+    position: relative;
+    top: 1px;
+
+}
+.customButton:hover {
+	background:linear-gradient(to bottom, #414141 5%, #5e5e5e 100%);
+	background-color:#5e5e5e;
 }
 
 .customOutBox {
@@ -511,6 +545,9 @@ html, body {
 
 .editorInfo {
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     max-width: 300px;
     max-height: 50px;
     background-color: lightgrey;
@@ -606,6 +643,7 @@ html, body {
     text-align: center;
     text-shadow: 0 0 8px black;
     font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
     cursor: default;
 }
@@ -633,12 +671,12 @@ html, body {
     position: absolute;
 }
 
-.zindex5 {
-    z-index: 5;
-}
 
 .text {
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     padding: 0 2px 0 2px;
     color: white;
     margin: 5px;
