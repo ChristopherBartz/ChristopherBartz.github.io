@@ -31,7 +31,6 @@ h2{
     position: absolute;
     z-index: -2;
     left: calc(50% + 40px);
-    top: calc(50% - 90px);
 }
 
 .camera {

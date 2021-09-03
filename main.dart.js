@@ -2496,7 +2496,7 @@ else r=!0
 else r=!0
 else r=!0
 q=document
-p=new O.iy(a7,r,q.querySelector("#startMenu"),q.querySelector("#levelOverview"),q.querySelector("#levelOverviewBox"),q.querySelector("#LevelEditorButton"),q.querySelector(a4),q.querySelector("#timer"),q.querySelector("#finishedText"),q.querySelector("#finished"),q.querySelector("#level"),q.querySelector("#pauseMenu"))
+p=new O.iy(a7,r,q.querySelector("#startMenu"),q.querySelector("#levelOverview"),q.querySelector("#levelOverviewBox"),q.querySelector("#LevelEditorButton"),q.querySelector(a4),q.querySelector("#timer"),q.querySelector("#finishedText"),q.querySelector("#finished"),q.querySelector("#level"),q.querySelector("#pauseMenu"),q.querySelector("#logo"))
 p.aX()
 r=new B.fF(a7,p)
 o=new N.hR()
@@ -2545,7 +2545,7 @@ q=a1.style
 q.toString
 C.f.al(q,C.f.ah(q,a6),"center",a3)}o.b=new T.hS(n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1)
 r.e=o
-r.bt()}},O={K:function K(){},hB:function hB(a){this.a=a},ee:function ee(a){this.a=a},iy:function iy(a,b,c,d,e,f,g,h,i,j,k,l){var _=this
+r.bt()}},O={K:function K(){},hB:function hB(a){this.a=a},ee:function ee(a){this.a=a},iy:function iy(a,b,c,d,e,f,g,h,i,j,k,l,m){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -2557,7 +2557,8 @@ _.x=h
 _.y=i
 _.z=j
 _.Q=k
-_.ch=l}},G={hI:function hI(){this.c=this.b=this.a=null},hJ:function hJ(a){this.a=a}},U={ed:function ed(a,b,c,d,e,f){var _=this
+_.ch=l
+_.cx=m}},G={hI:function hI(){this.c=this.b=this.a=null},hJ:function hJ(a){this.a=a}},U={ed:function ed(a,b,c,d,e,f){var _=this
 _.a=a
 _.b=b
 _.c=c
@@ -8752,26 +8753,29 @@ s.display="none"}else{s=document.querySelector("#Next").style
 s.display="inline"}J.bC(h.y,l)
 J.k(h.z).q(0,g)
 break}},
-aX:function(){var s=0,r=P.x(t.z),q=this,p,o
+aX:function(){var s=0,r=P.x(t.z),q=this,p,o,n
 var $async$aX=P.y(function(a,b){if(a===1)return P.u(b,r)
-while(true)switch(s){case 0:J.k(q.z).j(0,"hidden")
+while(true)switch(s){case 0:o=q.f
+n=J.B(o)
+if(!q.b)n.gw(o).q(0,"hidden")
+else n.gw(o).j(0,"hidden")
+J.k(q.z).j(0,"hidden")
 J.k(q.Q).j(0,"hidden")
 J.k(q.ch).j(0,"hidden")
 J.k(q.e).j(0,"hidden")
-J.k(q.c).q(0,"hidden")
-p=document
-J.k(p.querySelector("#logo")).q(0,"hidden")
-J.k(p.querySelector("#levelEditorBox")).j(0,"hidden")
-p=q.f
-o=J.B(p)
-if(!q.b)o.gw(p).q(0,"hidden")
-else o.gw(p).j(0,"hidden")
+o=q.c
+J.k(o).q(0,"hidden")
+J.k(document.querySelector("#levelEditorBox")).j(0,"hidden")
+n=q.cx
+p=n.style
+o=""+(C.b.t(o.offsetTop)+20)+"px"
+p.top=o
+J.k(n).q(0,"hidden")
 return P.v(null,r)}})
 return P.w($async$aX,r)},
 aw:function(){var s=0,r=P.x(t.z),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$aw=P.y(function(a,a0){if(a===1)return P.u(a0,r)
-while(true)$async$outer:switch(s){case 0:b=document
-J.k(b.querySelector("#logo")).j(0,"hidden")
+while(true)$async$outer:switch(s){case 0:J.k(p.cx).j(0,"hidden")
 J.k(p.c).j(0,"hidden")
 J.k(p.Q).j(0,"hidden")
 J.k(p.ch).j(0,"hidden")
@@ -8779,51 +8783,53 @@ J.k(p.e).q(0,"hidden")
 o=p.d
 n=J.B(o)
 n.gR(o).a8(0)
-for(m=p.a,l=0;l<m.a.length;l=j){k=b.createElement("button")
-j=l+1
-i="Level "+C.e.m(j)
-k.classList.add("buttonStyle")
-k.classList.add("menuButtonWidth")
-k.classList.add("levelButton")
-k.id=i
-n.gR(o).j(0,k)
-h=b.createElement("p")
-C.k.sO(h,i)
-h.classList.add("leveltext")
-k.appendChild(h)
-g=J.a_(m.b)
-if(typeof g!=="number"){q=H.i(g)
+for(m=p.a,l=0;l<m.a.length;l=i){k=document
+j=k.createElement("button")
+i=l+1
+h="Level "+C.e.m(i)
+j.classList.add("buttonStyle")
+j.classList.add("menuButtonWidth")
+j.classList.add("levelButton")
+j.id=h
+n.gR(o).j(0,j)
+g=k.createElement("p")
+C.k.sO(g,h)
+g.classList.add("leveltext")
+j.appendChild(g)
+f=J.a_(m.b)
+if(typeof f!=="number"){q=H.i(f)
 s=1
-break $async$outer}if(l>=g||J.R(J.h(m.b,l),-1))break
-else{f=b.createElement("p")
-f.classList.add("timetext")
-C.k.sO(f,m.aE(H.F(J.h(m.b,l))))
-k.appendChild(f)}}if(window.localStorage.getItem("levels")!=null)for(g=J.b4(t.bV.a(C.i.aR(0,window.localStorage.getItem("levels"))));g.v();){e=g.gD()
-k=b.createElement("button")
-k.classList.add("buttonStyle")
-k.classList.add("menuButtonWidth")
-k.classList.add("levelButton")
-H.C(e)
-k.id=e
-e=J.lM(e,"Level","")
-n.gR(o).j(0,k)
-h=b.createElement("p")
-C.k.sO(h,e)
-h.classList.add("leveltext")
-k.appendChild(h)
-i=P.al(H.at(e,"Custom ",""))+m.a.length
-d=J.a_(m.b)
-if(typeof d!=="number"){q=H.i(d)
+break $async$outer}if(l>=f||J.R(J.h(m.b,l),-1))break
+else{e=k.createElement("p")
+e.classList.add("timetext")
+C.k.sO(e,m.aE(H.F(J.h(m.b,l))))
+j.appendChild(e)}}if(window.localStorage.getItem("levels")!=null)for(k=J.b4(t.bV.a(C.i.aR(0,window.localStorage.getItem("levels"))));k.v();){d=k.gD()
+f=document
+j=f.createElement("button")
+j.classList.add("buttonStyle")
+j.classList.add("menuButtonWidth")
+j.classList.add("levelButton")
+H.C(d)
+j.id=d
+d=J.lM(d,"Level","")
+n.gR(o).j(0,j)
+g=f.createElement("p")
+C.k.sO(g,d)
+g.classList.add("leveltext")
+j.appendChild(g)
+h=P.al(H.at(d,"Custom ",""))+m.a.length
+c=J.a_(m.b)
+if(typeof c!=="number"){q=H.i(c)
 s=1
-break $async$outer}if(i<d&&!J.R(J.h(m.b,i),-1)){f=b.createElement("p")
-f.classList.add("timetext")
-C.k.sO(f,m.aE(H.F(J.h(m.b,i))))
-k.appendChild(f)}}c=b.createElement("button")
-c.classList.add("buttonStyle")
-c.classList.add("menuButtonWidth")
-C.D.sO(c,"Menu")
-c.id="BackToMenuButton3"
-n.gR(o).j(0,c)
+break $async$outer}if(h<c&&!J.R(J.h(m.b,h),-1)){e=f.createElement("p")
+e.classList.add("timetext")
+C.k.sO(e,m.aE(H.F(J.h(m.b,h))))
+j.appendChild(e)}}b=document.createElement("button")
+b.classList.add("buttonStyle")
+b.classList.add("menuButtonWidth")
+C.D.sO(b,"Menu")
+b.id="BackToMenuButton3"
+n.gR(o).j(0,b)
 case 1:return P.v(q,r)}})
 return P.w($async$aw,r)}}
 K.bt.prototype={
