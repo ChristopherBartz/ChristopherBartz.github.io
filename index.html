@@ -13,8 +13,7 @@
   <script defer src="main.dart.js"></script>
 </head>
 
-<body>
-  <div id="background" class="background">
+<body class="background gradient">
     <div id="startMenu" class="menu">
       <h1 id="title">Escape the Dark</h1>
       <button id="PlayButton" class="buttonStyle menuButtonWidth"
@@ -26,7 +25,7 @@
       <div id='editorOverview' class="menu">
         <h2>Level Editor</h2>
         <div id="overviewSection" class="editorSection">
-         
+
           <button id="editorBack" class="buttonStyle menuButtonWidth backToMenu">Menu</button>
           <button id="newLevel" class="buttonStyle menuButtonWidth">new Level</button>
         </div>
@@ -39,7 +38,7 @@
       <div id="levelEditor" class="levelEditor hidden"></div>
     </div>
     <div id="levelOverviewBox" class="scrollBox hidden">
-      <div id="levelOverview" class="menu "></div>
+      <div id="levelOverview" class="menu"></div>
     </div>
     <div id="level" class="level hidden">
       <div id="levelOverlay" class="overlay">
@@ -88,7 +87,7 @@
       <button id="Next" class="buttonStyle menuButtonWidth">Next level</button>
       <button id="backToMenuButton" class="buttonStyle menuButtonWidth backToMenu">Menu</button>
     </div>
-  </div>
+    <img src="resources/logo.svg" class="logo" id=logo>
 
   <script type="text/javascript">
     function requestOrientationPermission() {

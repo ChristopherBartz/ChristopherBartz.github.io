@@ -2467,20 +2467,19 @@ hi:function hi(a){this.a=a},
 hk:function hk(a){this.a=a},
 hj:function hj(){},
 hC:function hC(a){this.a=a
-this.c=this.b=null}},F={hl:function hl(a,b,c,d,e,f,g,h){var _=this
+this.c=this.b=null}},F={hl:function hl(a,b,c,d,e,f,g){var _=this
 _.a=a
 _.b=b
 _.c=c
 _.d=d
-_.e=e
+_.f=e
 _.r=f
-_.x=g
-_.z=_.y=null
-_.Q=h
-_.cy=_.cx=_.ch=!0
-_.db=null
-_.dx=""
-_.dy=!0},hq:function hq(a){this.a=a},hm:function hm(a,b){this.a=a
+_.y=_.x=null
+_.z=g
+_.cx=_.ch=_.Q=!0
+_.cy=null
+_.db=""
+_.dx=!0},hq:function hq(a){this.a=a},hm:function hm(a,b){this.a=a
 this.b=b},ho:function ho(a,b){this.a=a
 this.b=b},hp:function hp(a,b){this.a=a
 this.b=b},hr:function hr(a){this.a=a},hs:function hs(){},ht:function ht(a){this.a=a},hu:function hu(a){this.a=a},hv:function hv(a){this.a=a},hn:function hn(){},
@@ -5702,7 +5701,7 @@ m.bi()}else{m=t.z
 p=new N.fW(0.9,P.ax(m,m),P.ax(m,m),P.ax(m,m),[])
 m=document
 o=t.i
-n.c=A.m_(p,new F.hl(m.querySelector("#startMenu"),m.querySelector("#LevelEditorButton"),m.querySelector("#levelEditor"),m.querySelector("#levelEditorBox"),m.querySelector("#editorOverview"),H.t(["LF-b","LF-l","LF-r","LF-t","LF-lr","LF-tb","LF-lt","LF-bl","LF-rt","LF-br","LF-blt","LF-brt","LF-lrt","LF-blr","LF-blrt"],o),H.t(["Airvent-l","Airvent-r","Airvent-t","Airvent-b"],o),p))}return P.v(null,r)}})
+n.c=A.m_(p,new F.hl(m.querySelector("#startMenu"),m.querySelector("#levelEditor"),m.querySelector("#levelEditorBox"),m.querySelector("#editorOverview"),H.t(["LF-b","LF-l","LF-r","LF-t","LF-lr","LF-tb","LF-lt","LF-bl","LF-rt","LF-br","LF-blt","LF-brt","LF-lrt","LF-blr","LF-blrt"],o),H.t(["Airvent-l","Airvent-r","Airvent-t","Airvent-b"],o),p))}return P.v(null,r)}})
 return P.w($async$$1,r)},
 $S:1}
 B.fK.prototype={
@@ -6532,7 +6531,7 @@ A.hg.prototype={
 $1:function(a){var s,r
 t.X.a(a)
 s=window.navigator.clipboard
-r=this.a.b.dx
+r=this.a.b.db
 P.ld(s.writeText(window.localStorage.getItem(r)),t.z)},
 $S:3}
 A.hh.prototype={
@@ -6616,20 +6615,20 @@ A.hj.prototype={
 $1:function(a){return P.al(H.C(a))},
 $S:41}
 F.hl.prototype={
-cC:function(a){var s,r,q=this,p="hidden",o=q.e,n=J.B(o)
-if(a){q.fj()
-s=q.c
+cC:function(a){var s,r,q=this,p="hidden",o=q.d,n=J.B(o)
+if(a){J.k(document.querySelector("#logo")).j(0,p)
+q.fj()
+s=q.b
 r=J.B(s)
 r.gR(s).a8(0)
 r.gw(s).j(0,p)
 J.k(q.a).j(0,p)
-J.k(q.b).j(0,p)
-J.k(q.d).q(0,p)
+J.k(q.c).q(0,p)
 n.gw(o).q(0,p)
 q.fc()}else n.gw(o).j(0,p)},
 aW:function(){var s=0,r=P.x(t.H),q=this,p,o
 var $async$aW=P.y(function(a,b){if(a===1)return P.u(b,r)
-while(true)switch(s){case 0:p=q.c
+while(true)switch(s){case 0:p=q.b
 o=J.B(p)
 o.gR(p).a8(0)
 o.gw(p).q(0,"hidden")
@@ -6641,10 +6640,10 @@ return P.v(null,r)}})
 return P.w($async$aW,r)},
 fc:function(){var s=document.querySelector("#customlevelbox")
 J.c3(s).a8(0)
-J.aE(this.Q.e1(),new F.hm(this,s))},
+J.aE(this.z.e1(),new F.hm(this,s))},
 dX:function(){var s=this,r=document
-C.a.A(s.r,new F.ho(s,r.querySelector("#laserfieldDropdown")))
-C.a.A(s.x,new F.hp(s,r.querySelector("#airventDropdown")))},
+C.a.A(s.f,new F.ho(s,r.querySelector("#laserfieldDropdown")))
+C.a.A(s.r,new F.hp(s,r.querySelector("#airventDropdown")))},
 ao:function(a){var s="#"+a,r=t.W.a(document.querySelector(s)).value
 if(r==="")return null
 else return P.nJ(r)},
@@ -6654,7 +6653,7 @@ s=j.querySelector("#editor")
 r=J.B(s)
 r.gR(s).a8(0)
 q=s.style
-p=this.Q
+p=this.z
 o=C.e.m(50*p.f)+"px"
 q.height=o
 q=s.style
@@ -6668,8 +6667,8 @@ l.id="x"+m+"-y"+n
 l.classList.add("pathGrid")
 l.classList.add("levelEditorGrid")
 r.gR(s).j(0,l)}k=j.querySelector("#editorsection")
-this.y=C.b.t(k.scrollTop)
-this.z=C.b.t(k.scrollLeft)
+this.x=C.b.t(k.scrollTop)
+this.y=C.b.t(k.scrollLeft)
 J.k(j.querySelector("#editorbutton")).q(0,"hidden")},
 dw:function(a){var s,r,q,p
 if(a!=null){s=a.id
@@ -6679,7 +6678,7 @@ if(0>=s)return H.d(r,0)
 q=P.al(J.fx(r[0],1))
 if(1>=s)return H.d(r,1)
 p=P.al(J.fx(r[1],1))
-s=this.Q.a
+s=this.z.a
 if(p<0||p>=s.length)return H.d(s,p)
 s=H.C(J.h(s[p],q))
 t.C.a(a)
@@ -6815,7 +6814,7 @@ dA:function(){var s=this,r=document
 H.c1(t.g,t.h,"T","querySelectorAll")
 r=new W.aB(r.querySelectorAll(".absolutEntity"),t.Q)
 r.A(r,new F.hs())
-r=s.Q
+r=s.z
 r.db.A(0,new F.ht(s))
 r.dx.A(0,new F.hu(s))
 r.dy.A(0,new F.hv(s))},
@@ -6835,37 +6834,37 @@ r=J.W(f.i(b,"y"),50)
 q=J.W(f.i(b,"endx"),50)
 p=J.W(f.i(b,"endy"),50)}f=J.bA(s)
 if(f.J(s,q)){o=J.b2(r)
-if(o.an(r,i.y)){n=J.b2(p)
-if(n.an(p,i.y)){m=i.y
+if(o.an(r,i.x)){n=J.b2(p)
+if(n.an(p,i.x)){m=i.x
 l=e.clientHeight
 if(typeof m!=="number")return m.p()
 if(typeof l!=="number")return H.i(l)
-if(o.K(r,m+l)){m=i.y
+if(o.K(r,m+l)){m=i.x
 l=e.clientHeight
 if(typeof m!=="number")return m.p()
 if(typeof l!=="number")return H.i(l)
 l=n.K(p,m+l)
 n=l}else n=!1}else n=!1}else n=!1
 if(n){k=H.a5(J.cw(J.c2(p,r)))
-j=h}else if(o.K(r,i.y)&&J.V(p,i.y)){k=H.a5(J.cw(J.c2(p,i.y)))
-j="top"}else{n=i.y
+j=h}else if(o.K(r,i.x)&&J.V(p,i.x)){k=H.a5(J.cw(J.c2(p,i.x)))
+j="top"}else{n=i.x
 m=e.clientHeight
 if(typeof n!=="number")return n.p()
 if(typeof m!=="number")return H.i(m)
-if(o.K(r,n+m)){o=i.y
+if(o.K(r,n+m)){o=i.x
 n=e.clientHeight
 if(typeof o!=="number")return o.p()
 if(typeof n!=="number")return H.i(n)
 n=J.V(p,o+n)
 o=n}else o=!1
-if(o){o=i.y
+if(o){o=i.x
 n=e.clientHeight
 if(typeof o!=="number")return o.p()
 if(typeof n!=="number")return H.i(n)
 if(typeof r!=="number")return H.i(r)
 k=Math.abs(o+n-r)
 j=h}else{j=g
-k=0}}if(!f.K(s,i.z)){o=i.z
+k=0}}if(!f.K(s,i.y)){o=i.y
 n=e.clientWidth
 if(typeof o!=="number")return o.p()
 if(typeof n!=="number")return H.i(n)
@@ -6881,37 +6880,37 @@ o.height=n
 o=a.style
 o.width="10px"
 s=f.u(s,5)}else{o=J.bA(r)
-if(o.J(r,p)){if(f.an(s,i.z)){n=J.b2(q)
-if(n.an(q,i.z)){m=i.z
+if(o.J(r,p)){if(f.an(s,i.y)){n=J.b2(q)
+if(n.an(q,i.y)){m=i.y
 l=e.clientWidth
 if(typeof m!=="number")return m.p()
 if(typeof l!=="number")return H.i(l)
-if(f.K(s,m+l)){m=i.z
+if(f.K(s,m+l)){m=i.y
 l=e.clientWidth
 if(typeof m!=="number")return m.p()
 if(typeof l!=="number")return H.i(l)
 l=n.K(q,m+l)
 n=l}else n=!1}else n=!1}else n=!1
 if(n){k=H.a5(J.cw(J.c2(q,s)))
-j=h}else if(f.K(s,i.z)&&J.V(q,i.z)){k=H.a5(J.cw(J.c2(q,i.z)))
-j="left"}else{n=i.z
+j=h}else if(f.K(s,i.y)&&J.V(q,i.y)){k=H.a5(J.cw(J.c2(q,i.y)))
+j="left"}else{n=i.y
 m=e.clientWidth
 if(typeof n!=="number")return n.p()
 if(typeof m!=="number")return H.i(m)
-if(f.K(s,n+m)){f=i.z
+if(f.K(s,n+m)){f=i.y
 n=e.clientWidth
 if(typeof f!=="number")return f.p()
 if(typeof n!=="number")return H.i(n)
 n=J.V(q,f+n)
 f=n}else f=!1
-if(f){f=i.z
+if(f){f=i.y
 n=e.clientWidth
 if(typeof f!=="number")return f.p()
 if(typeof n!=="number")return H.i(n)
 if(typeof s!=="number")return H.i(s)
 k=Math.abs(f+n-s)
 j=h}else{j=g
-k=0}}if(!o.K(r,i.y)){f=i.y
+k=0}}if(!o.K(r,i.x)){f=i.x
 n=e.clientHeight
 if(typeof f!=="number")return f.p()
 if(typeof n!=="number")return H.i(n)
@@ -6929,14 +6928,14 @@ f.width=n
 r=o.u(r,5)}else j=h}switch(j){case"normal":f=a.style
 o=C.b.t(d.offsetLeft)
 H.aq(s)
-n=i.z
+n=i.y
 if(typeof n!=="number")return H.i(n)
 n=""+C.b.X(o+s-n)+"px"
 f.left=n
 f=a.style
 o=C.b.t(d.offsetTop)
 H.aq(r)
-n=i.y
+n=i.x
 if(typeof n!=="number")return H.i(n)
 n=""+C.b.X(o+r-n)+"px"
 f.top=n
@@ -6944,7 +6943,7 @@ break
 case"top":f=a.style
 o=C.b.t(d.offsetLeft)
 H.aq(s)
-n=i.z
+n=i.y
 if(typeof n!=="number")return H.i(n)
 n=""+C.b.X(o+s-n)+"px"
 f.left=n
@@ -6958,18 +6957,18 @@ f.left=o
 f=a.style
 o=C.b.t(d.offsetTop)
 H.aq(r)
-n=i.y
+n=i.x
 if(typeof n!=="number")return H.i(n)
 n=""+C.b.X(o+r-n)+"px"
 f.top=n
 break
 default:return}}else{f=J.b2(s)
-if(f.M(s,i.z)){o=i.z
+if(f.M(s,i.y)){o=i.y
 n=e.clientWidth
 if(typeof o!=="number")return o.p()
 if(typeof n!=="number")return H.i(n)
 if(f.K(s,o+n)){o=J.b2(r)
-if(o.M(r,i.y)){n=i.y
+if(o.M(r,i.x)){n=i.x
 m=e.clientHeight
 if(typeof n!=="number")return n.p()
 if(typeof m!=="number")return H.i(m)
@@ -6978,14 +6977,14 @@ o=m}else o=!1}else o=!1}else o=!1
 if(o){o=a.style
 n=C.b.t(d.offsetLeft)
 f=H.aq(f.u(s,25))
-m=i.z
+m=i.y
 if(typeof m!=="number")return H.i(m)
 m=""+C.b.X(n+f-m)+"px"
 o.left=m
 f=a.style
 o=C.b.t(d.offsetTop)
 n=H.aq(J.c2(r,25))
-m=i.y
+m=i.x
 if(typeof m!=="number")return H.i(m)
 m=""+C.b.X(o+n-m)+"px"
 f.top=m}else return}J.c3(d).j(0,a)},
@@ -6998,10 +6997,10 @@ if(j==null)return
 s=k.querySelector("#jsonGenerate")
 r=k.querySelector("#jsonCopy")
 q=k.querySelector("#editorsection")
-p=m.dy&&a
+p=m.dx&&a
 o=J.B(j)
-if(p){m.dy=!1
-o.sO(j,m.di(m.Q.bz()))
+if(p){m.dx=!1
+o.sO(j,m.di(m.z.bz()))
 n=k.querySelector("#editor")
 k=j.style
 p=C.b.t(q.offsetWidth)<C.b.t(n.offsetWidth)?""+C.b.t(q.offsetWidth)+"px":""+C.b.t(n.offsetWidth)+"px"
@@ -7017,29 +7016,29 @@ p=""+(C.b.t(q.offsetLeft)+C.b.t(q.offsetWidth)+20)+"px"
 k.left=p
 o.gw(j).q(0,l)
 J.k(r).q(0,l)
-J.bC(s,"Hide JSON")}else{m.dy=!0
+J.bC(s,"Hide JSON")}else{m.dx=!0
 o.gw(j).j(0,l)
 J.bC(s,"Show JSON")
 J.k(r).j(0,l)}},
 ed:function(){return this.cA(!0)},
 cz:function(a,b){var s,r,q=this,p=document,o=p.querySelector("#customLevelOutbox"),n=p.querySelector("#customOut")
-if(b)p=q.cy||a!=q.dx
+if(b)p=q.cx||a!=q.db
 else p=!1
 s=J.B(o)
 r=J.B(n)
 if(p){s.gw(o).q(0,"hidden")
 r.sO(n,q.di(window.localStorage.getItem(a)))
-q.dx=a
-q.cy=!1
+q.db=a
+q.cx=!1
 r.cv(n,0,0)}else{s.gw(o).j(0,"hidden")
 r.sO(n,"")
-q.dx=""
-q.cy=!0}},
+q.db=""
+q.cx=!0}},
 ec:function(a){return this.cz(null,a)},
 eb:function(a){return this.cz(a,!0)},
 eg:function(){var s,r,q=document.querySelector("#PatrolSubmit")
 if(q==null)return
-s=this.Q
+s=this.z
 s=s.c==="Patroler"&&s.fr.length>2
 r=J.B(q)
 if(s)r.gw(q).q(0,"hidden")
@@ -7047,41 +7046,41 @@ else r.gw(q).j(0,"hidden")},
 cB:function(a){var s,r,q,p="borderBotNoRad",o=document,n=o.querySelector("#laserfieldDropdown")
 if(n==null)return
 s=o.querySelector("#Laserfield")
-o=this.ch&&a
+o=this.Q&&a
 r=J.B(n)
 q=J.B(s)
 if(o){r.gw(n).q(0,"hidden")
 q.gw(s).j(0,p)
-this.ch=!1}else{r.gw(n).j(0,"hidden")
+this.Q=!1}else{r.gw(n).j(0,"hidden")
 q.gw(s).q(0,p)
-this.ch=!0}},
+this.Q=!0}},
 ee:function(){return this.cB(!0)},
 cw:function(a){var s,r,q,p=this,o="hidden",n="borderBotNoRad",m=document,l=m.querySelector("#airventDropdown")
 if(l==null)return
 s=m.querySelector("#Airvent")
 r=m.querySelector("#airstreamBox")
-m=p.cx&&a
+m=p.ch&&a
 q=J.B(l)
 if(m){q.gw(l).q(0,o)
 J.k(s).j(0,n)
-p.cx=!1}else{p.cx=!0
+p.ch=!1}else{p.ch=!0
 q.gw(l).j(0,o)
 m=J.B(r)
-if(J.U(p.Q.c,"Airvent"))m.gw(r).q(0,o)
+if(J.U(p.z.c,"Airvent"))m.gw(r).q(0,o)
 else{m.gw(r).j(0,o)
 J.k(s).q(0,n)}}},
 ea:function(){return this.cw(!0)},
 ef:function(){var s,r=document.querySelector("#lasergateSettings")
 if(r==null)return
 s=J.B(r)
-if(this.Q.c==="Lasergate")s.gw(r).q(0,"hidden")
+if(this.z.c==="Lasergate")s.gw(r).q(0,"hidden")
 else s.gw(r).j(0,"hidden")},
 fR:function(){var s,r="hidden",q="Multiplier:",p=document,o=t.W.a(p.querySelector("#valueInput")),n=p.querySelector("#powerUps"),m=p.querySelector("#valueLabel"),l=p.querySelector("#valueBox")
 p=J.B(n)
 p.gw(n).q(0,r)
 s=J.B(l)
 s.gw(l).q(0,r)
-switch(this.Q.c){case"Speed-Up":J.bC(m,q);(o&&C.d).sce(o,"2")
+switch(this.z.c){case"Speed-Up":J.bC(m,q);(o&&C.d).sce(o,"2")
 C.d.scd(o,"10")
 C.d.sbF(o,"1")
 C.d.sa4(o,"2")
@@ -7107,13 +7106,13 @@ if(C.b.t(s.scrollHeight)>C.b.t(s.offsetHeight))r.cv(s,0,C.b.t(s.scrollHeight)-C.
 r.gw(s).q(0,"hidden")},
 ag:function(b7,b8,b9,c0){var s=0,r=P.x(t.H),q=this,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6
 var $async$ag=P.y(function(c1,c2){if(c1===1)return P.u(c2,r)
-while(true)switch(s){case 0:b3=q.ch
-b4=q.cx
-b5=q.dy
-b6=q.cy
+while(true)switch(s){case 0:b3=q.Q
+b4=q.ch
+b5=q.dx
+b6=q.cx
 if(b8==null)p=c0==null?["close"]:[c0]
 else{if(c0!=null&&!C.a.n(b8,c0))C.a.j(b8,c0)
-p=b8}o=p.length,n=q.Q,m=t.C,l=!b6,k=t.W,j=0
+p=b8}o=p.length,n=q.z,m=t.C,l=!b6,k=t.W,j=0
 case 2:if(!(j<p.length)){s=4
 break}i=p[j]
 if(i!=="scroll"){q.ec(!1)
@@ -7189,8 +7188,8 @@ break}(d&&C.d).sa4(d,""+n.ch);(c&&C.d).sa4(c,H.b(n.r));(b&&C.d).sa4(b,""+n.cx);(
 s=6
 break
 case 14:a0=document.querySelector("#editorsection")
-q.y=C.b.t(a0.scrollTop)
-q.z=C.b.t(a0.scrollLeft)
+q.x=C.b.t(a0.scrollTop)
+q.y=C.b.t(a0.scrollLeft)
 q.dA()
 s=6
 break
@@ -7203,8 +7202,8 @@ break
 case 17:if(b5)q.ed()
 s=6
 break
-case 18:if(!l||b9!=q.db){q.eb(b9)
-q.db=b9}s=6
+case 18:if(!l||b9!=q.cy){q.eb(b9)
+q.cy=b9}s=6
 break
 case 19:h=document
 a1=h.querySelector("#stateBack")
@@ -7295,7 +7294,7 @@ case",":q=H.C(n.$2(r,J.k9(q)+(a[p]+"\n")))
 break
 default:q=J.au(q,o)}}return q}}
 F.hq.prototype={
-$1:function(a){J.lQ(this.a.c,H.C(a))},
+$1:function(a){J.lQ(this.a.b,H.C(a))},
 $S:10}
 F.hm.prototype={
 $1:function(a){var s,r,q=document,p=q.createElement("div"),o=J.l7(a)
@@ -8760,7 +8759,9 @@ J.k(q.Q).j(0,"hidden")
 J.k(q.ch).j(0,"hidden")
 J.k(q.e).j(0,"hidden")
 J.k(q.c).q(0,"hidden")
-J.k(document.querySelector("#levelEditorBox")).j(0,"hidden")
+p=document
+J.k(p.querySelector("#logo")).q(0,"hidden")
+J.k(p.querySelector("#levelEditorBox")).j(0,"hidden")
 p=q.f
 o=J.B(p)
 if(!q.b)o.gw(p).q(0,"hidden")
@@ -8769,60 +8770,60 @@ return P.v(null,r)}})
 return P.w($async$aX,r)},
 aw:function(){var s=0,r=P.x(t.z),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b
 var $async$aw=P.y(function(a,a0){if(a===1)return P.u(a0,r)
-while(true)$async$outer:switch(s){case 0:J.k(p.c).j(0,"hidden")
+while(true)$async$outer:switch(s){case 0:b=document
+J.k(b.querySelector("#logo")).j(0,"hidden")
+J.k(p.c).j(0,"hidden")
 J.k(p.Q).j(0,"hidden")
 J.k(p.ch).j(0,"hidden")
 J.k(p.e).q(0,"hidden")
 o=p.d
 n=J.B(o)
 n.gR(o).a8(0)
-for(m=p.a,l=0;l<m.a.length;l=i){k=document
-j=k.createElement("button")
-i=l+1
-h="Level "+C.e.m(i)
-j.classList.add("buttonStyle")
-j.classList.add("menuButtonWidth")
-j.classList.add("levelButton")
-j.id=h
-n.gR(o).j(0,j)
-g=k.createElement("p")
-C.k.sO(g,h)
-g.classList.add("leveltext")
-j.appendChild(g)
-f=J.a_(m.b)
-if(typeof f!=="number"){q=H.i(f)
+for(m=p.a,l=0;l<m.a.length;l=j){k=b.createElement("button")
+j=l+1
+i="Level "+C.e.m(j)
+k.classList.add("buttonStyle")
+k.classList.add("menuButtonWidth")
+k.classList.add("levelButton")
+k.id=i
+n.gR(o).j(0,k)
+h=b.createElement("p")
+C.k.sO(h,i)
+h.classList.add("leveltext")
+k.appendChild(h)
+g=J.a_(m.b)
+if(typeof g!=="number"){q=H.i(g)
 s=1
-break $async$outer}if(l>=f||J.R(J.h(m.b,l),-1))break
-else{e=k.createElement("p")
-e.classList.add("timetext")
-C.k.sO(e,m.aE(H.F(J.h(m.b,l))))
-j.appendChild(e)}}if(window.localStorage.getItem("levels")!=null)for(k=J.b4(t.bV.a(C.i.aR(0,window.localStorage.getItem("levels"))));k.v();){d=k.gD()
-f=document
-j=f.createElement("button")
-j.classList.add("buttonStyle")
-j.classList.add("menuButtonWidth")
-j.classList.add("levelButton")
-H.C(d)
-j.id=d
-d=J.lM(d,"Level","")
-n.gR(o).j(0,j)
-g=f.createElement("p")
-C.k.sO(g,d)
-g.classList.add("leveltext")
-j.appendChild(g)
-h=P.al(H.at(d,"Custom ",""))+m.a.length
-c=J.a_(m.b)
-if(typeof c!=="number"){q=H.i(c)
+break $async$outer}if(l>=g||J.R(J.h(m.b,l),-1))break
+else{f=b.createElement("p")
+f.classList.add("timetext")
+C.k.sO(f,m.aE(H.F(J.h(m.b,l))))
+k.appendChild(f)}}if(window.localStorage.getItem("levels")!=null)for(g=J.b4(t.bV.a(C.i.aR(0,window.localStorage.getItem("levels"))));g.v();){e=g.gD()
+k=b.createElement("button")
+k.classList.add("buttonStyle")
+k.classList.add("menuButtonWidth")
+k.classList.add("levelButton")
+H.C(e)
+k.id=e
+e=J.lM(e,"Level","")
+n.gR(o).j(0,k)
+h=b.createElement("p")
+C.k.sO(h,e)
+h.classList.add("leveltext")
+k.appendChild(h)
+i=P.al(H.at(e,"Custom ",""))+m.a.length
+d=J.a_(m.b)
+if(typeof d!=="number"){q=H.i(d)
 s=1
-break $async$outer}if(h<c&&!J.R(J.h(m.b,h),-1)){e=f.createElement("p")
-e.classList.add("timetext")
-C.k.sO(e,m.aE(H.F(J.h(m.b,h))))
-j.appendChild(e)}}b=document.createElement("button")
-b.classList.add("buttonStyle")
-b.classList.add("menuButtonWidth")
-C.D.sO(b,"Menu")
-b.id="BackToMenuButton3"
-n.gR(o).j(0,b)
+break $async$outer}if(i<d&&!J.R(J.h(m.b,i),-1)){f=b.createElement("p")
+f.classList.add("timetext")
+C.k.sO(f,m.aE(H.F(J.h(m.b,i))))
+k.appendChild(f)}}c=b.createElement("button")
+c.classList.add("buttonStyle")
+c.classList.add("menuButtonWidth")
+C.D.sO(c,"Menu")
+c.id="BackToMenuButton3"
+n.gR(o).j(0,c)
 case 1:return P.v(q,r)}})
 return P.w($async$aw,r)}}
 K.bt.prototype={
