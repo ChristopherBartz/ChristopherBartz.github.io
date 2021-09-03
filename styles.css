@@ -77,6 +77,8 @@ h2{
     box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.8);
     background:linear-gradient(to bottom, #535353 5%, #414141 100%);
     border:1px solid #414141;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 button:hover {
@@ -87,8 +89,6 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
-    -webkit-user-select: none;
-    user-select: none;
 }
   
 .menuButtonWidth {
