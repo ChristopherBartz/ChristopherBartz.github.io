@@ -2,340 +2,215 @@
   "Level": [
     [
       "Wall",
-      "LF-b",
-      "LF-b",
-      "LF-b",
-      "LF-b",
-      "LF-b",
-      "LF-b",
       "Wall",
       "Wall",
       "Wall",
+      "Path",
       "Wall",
+      "Path",
       "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path"
     ],
     [
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Wall",
+      "Path",
+      "Wall",
+      "Wall",
+      "Path",
+      "Wall",
+      "Wall",
+      "Abyss",
+      "Wall",
+      "Wall",
+      "Path"
+    ],
+    [
+      "Path",
+      "Abyss",
+      "Abyss",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Path",
+      "Wall",
+      "Path"
+    ],
+    [
+      "Path",
+      "Path",
+      "Wall",
+      "Path",
+      "Wall",
+      "Start",
+      "Wall",
+      "Path",
+      "LF-lr",
+      "Path",
+      "LF-t",
+      "Path",
+      "LF-t",
+      "Path",
+      "Path"
+    ],
+    [
+      "Abyss",
+      "Path",
+      "Abyss",
+      "Path",
+      "Path",
+      "Wall",
+      "Wall",
+      "Path",
+      "LF-lr",
+      "Path",
+      "Wall",
+      "Path",
+      "Wall",
+      "Path",
+      "Abyss"
+    ],
+    [
+      "Path",
+      "Path",
+      "Abyss",
+      "Wall",
+      "Path",
+      "Path",
+      "Wall",
+      "Path",
+      "LF-blr",
+      "Path",
+      "Wall",
+      "Path",
+      "Wall",
+      "Path",
+      "Path"
+    ],
+    [
+      "Path",
+      "Abyss",
+      "Abyss",
+      "Path",
+      "LF-lr",
+      "Path",
       "Wall",
       "Path",
       "Path",
       "Path",
+      "Wall",
+      "Wall",
+      "Wall",
+      "Abyss",
+      "Path"
+    ],
+    [
       "Path",
       "Path",
+      "Abyss",
       "Path",
+      "LF-lr",
       "Path",
+      "Wall",
+      "Wall",
+      "Wall",
+      "Wall",
+      "Wall",
+      "Abyss",
       "Path",
+      "Check",
+      "Path"
+    ],
+    [
+      "Abyss",
       "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
+      "Abyss",
+      "Air-l-1",
+      "Air-l-1",
+      "Air-l-1",
+      "Airvent-l",
       "Path",
       "Path",
       "Path",
       "Goal",
-      "Path",
-      "Wall"
+      "Wall",
+      "Abyss",
+      "Wall",
+      "Path"
     ],
     [
-      "Wall",
       "Path",
       "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Check",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
+      "LF-bl",
       "Path",
       "LF-blrt",
       "Path",
+      "Wall",
+      "Path",
+      "Wall",
+      "Wall",
+      "Wall",
+      "Path",
+      "Wall",
+      "Wall",
+      "Path"
+    ],
+    [
+      "Abyss",
+      "LF-rt",
       "Path",
       "Path",
       "Path",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Wall"
+      "Path",
+      "Wall",
+      "Path",
+      "Path",
+      "Wall",
+      "Path",
+      "Path",
+      "Path",
+      "Wall",
+      "Path"
     ],
     [
       "Wall",
       "Path",
       "Path",
+      "Wall",
+      "Wall",
+      "Wall",
       "Path",
       "Wall",
+      "Path",
       "Wall",
+      "Path",
+      "Abyss",
+      "Path",
       "Wall",
-      "Wall",
-      "Wall",
-      "Airvent-r",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Wall"
+      "Path"
     ],
     [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
       "Wall",
       "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
       "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-blr",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Airvent-r",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Air-r-1.2",
-      "Abyss",
-      "Abyss",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Abyss",
-      "Abyss",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "Abyss",
-      "Abyss",
-      "Path",
-      "Path",
-      "Path",
-      "LF-blr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-blrt",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-blrt",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
       "Check",
       "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "LF-r",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
+      "Wall",
       "Path",
       "Path",
       "Path",
@@ -344,328 +219,134 @@
       "Path",
       "Path",
       "Wall",
-      "Path",
-      "Path",
-      "LF-lrt",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
+      "Path"
     ],
     [
       "Wall",
-      "Wall",
-      "LF-t",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "LF-tb",
-      "Path",
-      "Path",
       "Path",
       "Wall",
+      "Wall",
       "Path",
-      "Path",
+      "LF-l",
+      "Wall",
+      "Wall",
       "Path",
       "LF-lr",
       "Path",
-      "Path",
-      "Path",
-      "Wall"
+      "Wall",
+      "Wall",
+      "Wall",
+      "Path"
     ],
     [
-      "Wall",
-      "Path",
-      "Start",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "LF-lr",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "LF-t",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
+      "Airvent-r",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1",
+      "Air-r-1"
     ]
   ],
   "Collectibles": {
-    "Life": [
-      {
-        "x": 17.9,
-        "y": 17.7
-      },
-      {
-        "x": 8.1,
-        "y": 17.9
-      }
-    ],
     "Key": [
       {
-        "x": 5.8,
-        "y": 4.5
-      }
-    ],
-    "Visibility": [
-      {
-        "x": 6.8,
-        "y": 14,
-        "duration": 2500,
-        "difference": 2
-      },
-      {
-        "x": 5.3,
-        "y": 17.8,
-        "duration": 2500,
-        "difference": -2
-      }
-    ],
-    "Speed": [
-      {
-        "x": 13.7,
-        "y": 10.9,
-        "duration": 2500,
-        "multiplier": 4
-      },
-      {
-        "x": 17.7,
-        "y": 10.4,
-        "duration": 2500,
-        "multiplier": 4
+        "x": 12.5,
+        "y": 7.6
       }
     ],
     "Invert": [
       {
-        "x": 8.1,
-        "y": 17.9,
-        "duration": 4000
-      }
-    ]
-  },
-  "Traps": {
-    "Lasergate": [
-      {
-        "x": 16,
-        "y": 15,
-        "endx": 18.9,
-        "endy": 15,
-        "on": 3500,
-        "off": 4000
+        "x": 0.5,
+        "y": 9.5,
+        "duration": 5000
       },
       {
-        "x": 5.3,
-        "y": 13,
-        "endx": 5.3,
-        "endy": 15.9,
-        "on": 6500,
-        "off": 4000
-      },
-      {
-        "x": 12.4,
-        "y": 8.7,
-        "endx": 14.5,
-        "endy": 8.7,
-        "on": 4000,
-        "off": 3000
+        "x": 8.4,
+        "y": 6.5,
+        "duration": 10000
       }
-    ]
-  },
-  "Monster": {
-    "Runner": [
-      [
-        {
-          "x": 17.4,
-          "y": 8.6
-        },
-        {
-          "x": 12.8,
-          "y": 10
-        }
-      ],
-      [
-        {
-          "x": 6.1,
-          "y": 9
-        },
-        {
-          "x": 14.2,
-          "y": 10.6
-        }
-      ],
-      [
-        {
-          "x": 18.2,
-          "y": 13.3
-        },
-        {
-          "x": 12.3,
-          "y": 16.9
-        }
-      ],
-      [
-        {
-          "x": 6.7,
-          "y": 14.9
-        },
-        {
-          "x": 7.5,
-          "y": 11.6
-        }
-      ],
-      [
-        {
-          "x": 7.9,
-          "y": 3.8
-        },
-        {
-          "x": 5.7,
-          "y": 1.7
-        }
-      ],
-      [
-        {
-          "x": 6.9,
-          "y": 1.3
-        },
-        {
-          "x": 11.6,
-          "y": 1.5
-        }
-      ]
     ],
+    "Visibility": [
+      {
+        "x": 1.4,
+        "y": 13.5,
+        "duration": 10000,
+        "difference": -1
+      }
+    ],
+    "Life": [
+      {
+        "x": 12.3,
+        "y": 2.4
+      },
+      {
+        "x": 5.4,
+        "y": 10.5
+      },
+      {
+        "x": 3.4,
+        "y": 6.5
+      }
+    ]
+  },
+  "Traps": {},
+  "Monster": {
     "Patroler": [
       [
         {
-          "x": 16.3,
-          "y": 2
+          "x": 6.4,
+          "y": 2.3
         },
         {
-          "x": 14.6,
-          "y": 4.2
+          "x": 3.5,
+          "y": 2.5
         },
         {
-          "x": 3,
-          "y": 2.7
+          "x": 3.4,
+          "y": 4.5
         },
         {
-          "x": 2.9,
+          "x": 4.5,
+          "y": 4.4
+        },
+        {
+          "x": 4.4,
+          "y": 5.5
+        },
+        {
+          "x": 7.5,
+          "y": 5.5
+        },
+        {
+          "x": 7.4,
+          "y": 2.5
+        },
+        {
+          "x": 7.4,
+          "y": 2.5
+        }
+      ],
+      [
+        {
+          "x": 11.4,
+          "y": 0.5
+        },
+        {
+          "x": 11.4,
           "y": 5.4
         },
         {
-          "x": 2.1,
-          "y": 6.6
-        },
-        {
-          "x": 2,
-          "y": 9.6
-        },
-        {
-          "x": 8.5,
-          "y": 9.5
-        },
-        {
-          "x": 18.1,
-          "y": 7.7
-        }
-      ],
-      [
-        {
-          "x": 1.9,
-          "y": 14.2
-        },
-        {
-          "x": 8.7,
-          "y": 13.8
-        },
-        {
-          "x": 3.7,
-          "y": 18.4
-        },
-        {
-          "x": 13,
-          "y": 18.4
-        },
-        {
-          "x": 13.2,
-          "y": 13.9
-        },
-        {
-          "x": 16.9,
-          "y": 13.9
-        },
-        {
-          "x": 18.3,
-          "y": 16.6
-        }
-      ],
-      [
-        {
-          "x": 8.8,
-          "y": 2.6
-        },
-        {
-          "x": 11,
-          "y": 6.1
-        },
-        {
           "x": 14.3,
-          "y": 7.6
-        },
-        {
-          "x": 8.8,
-          "y": 10.9
+          "y": 5.6
         }
       ]
     ]

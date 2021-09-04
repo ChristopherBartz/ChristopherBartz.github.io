@@ -61,7 +61,7 @@ h2{
     position: relative;
 }
 
-.gridfield {
+.field {
     display: grid;
     position: absolute;
 }
@@ -117,6 +117,13 @@ button:active {
 
 .repeat {
     background-repeat: repeat;
+}
+
+.fieldborder{
+    border: 3px  solid #5f676f;
+    box-sizing: border-box ;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .gridentity {

@@ -65,19 +65,20 @@
 
 
       <div id="camera" class="camera">
-        <div id="levelBackground" class="gridfield background repeat">
+        <div id="levelBackground" class="gridfield field background repeat">
         </div>
-        <div id="field" class="gridfield">
+        <div id="field" class="gridfield field">
         </div>
-        <div id="viewfield" class="gridfield"></div>
-
+        <div id="fieldborder" class="gridfield field fieldborder">
+        </div>
+        <div id="viewfield" class="gridfield field"></div>
       </div>
     </div>
 
     <div id="pauseMenu" class="popupMenu hidden">
       <p class="lineBreak">Paused</p>
       <button id="Continue" class="buttonStyle menuButtonWidth">Continue</button>
-      <button id="LevelOverviewButton" class="buttonStyle menuButtonWidth">Levelselection</button>
+      <button id="LevelOverviewButton" class="buttonStyle menuButtonWidth levelOverviewButton">Levelselection</button>
       <button id="BackToMenuButton2" class="backToMenu buttonStyle menuButtonWidth">Menu</button>
     </div>
 
@@ -85,6 +86,7 @@
       <p id="finishedText" class="lineBreak"></p>
       <button id="Again" class="buttonStyle menuButtonWidth">Play again</button>
       <button id="Next" class="buttonStyle menuButtonWidth">Next level</button>
+      <button id="LevelOverviewButton2" class="buttonStyle menuButtonWidth levelOverviewButton">Levelselection</button>
       <button id="backToMenuButton" class="buttonStyle menuButtonWidth backToMenu">Menu</button>
     </div>
     <img src="resources/logo.svg" class="logo" id=logo>

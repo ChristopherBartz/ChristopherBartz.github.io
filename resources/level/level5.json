@@ -1,146 +1,169 @@
 {
   "Level":[
       [
-          "Path",
-          "Path",
-          "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
-          "Wall",
-          "Path"
-      ],
-      [
-          "Path",
-          "Path",
-          "Wall",
-          "Path",
-          "Abyss",
-          "Path",
-          "Wall",
-          "Path",
           "Wall",
           "Wall",
           "Wall",
           "Wall",
-          "Path",
-          "Wall",
-          "Path"
-      ],
-      [
           "Wall",
           "Wall",
           "Wall",
-          "Path",
-          "Abyss",
-          "Path",
           "Wall",
           "Wall",
           "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
           "Wall",
           "Wall"
       ],
       [
-          "Path",
-          "Path",
-          "Wall",
-          "Path",
-          "Abyss",
-          "Air-l-1",
-          "Air-l-1",
-          "Air-l-1",
-          "Air-l-1",
-          "Air-l-1",
-          "Airvent-l",
           "Wall",
           "Path",
           "Path",
-          "Path"
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
       ],
       [
-          "Path",
-          "Wall",
           "Wall",
           "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
           "Abyss",
           "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
+          "Abyss",
+          "Abyss",
           "Abyss",
           "Abyss",
           "Wall",
+          "Path",
+          "Path",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Abyss",
           "Check",
-          "Path"
-      ],
-      [
-          "Path",
-          "Path",
           "Path",
           "Path",
           "Path",
           "Path",
           "Wall",
-          "Path",
-          "Path",
           "Path",
           "Path",
           "Abyss",
-          "Wall",
-          "Wall",
-          "Path"
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Path",
+          "Wall"
       ],
       [
-          "Path",
           "Wall",
-          "Wall",
-          "Wall",
-          "Path",
-          "Wall",
-          "Wall",
-          "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Path"
-      ],
-      [
-          "Path",
-          "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
-          "Path"
-      ],
-      [
           "Abyss",
           "Path",
           "Wall",
+          "Wall",
+          "Wall",
           "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Abyss",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Abyss",
+          "Path",
+          "Path",
+          "Goal",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
           "Path",
           "Path",
           "Path",
@@ -148,185 +171,190 @@
           "Path",
           "Path",
           "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Path"
-      ],
-      [
-          "Abyss",
-          "Goal",
-          "Wall",
-          "Path",
-          "Wall",
-          "Wall",
           "Path",
           "Path",
           "Path",
-          "Wall",
           "Path",
           "Path",
           "Path",
-          "Wall",
-          "Path"
-      ],
-      [
-          "Wall",
-          "Wall",
-          "Wall",
           "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Path",
-          "Wall",
           "Wall"
       ],
       [
-          "Path",
-          "Path",
           "Wall",
           "Path",
           "Wall",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
-          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
           "Wall",
           "Path",
           "Path",
-          "Wall",
-          "Path"
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
       ],
       [
           "Wall",
           "Path",
+          "Path",
           "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
           "Path",
           "Wall",
           "Path",
           "Abyss",
           "Abyss",
           "Abyss",
-          "Path",
-          "Wall",
-          "Path",
-          "Wall",
-          "Wall",
-          "Path"
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Wall"
       ],
       [
           "Wall",
           "Path",
           "Path",
-          "Path",
           "Wall",
-          "Path",
-          "Path",
           "Path",
           "Path",
           "Path",
           "Wall",
           "Path",
-          "Path",
-          "Wall",
-          "Path"
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Abyss",
+          "Wall"
       ],
       [
-          "Path",
-          "Wall",
-          "Wall",
           "Wall",
           "Path",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
-          "Wall",
           "Path",
           "Wall",
           "Path",
+          "Path",
+          "Path",
           "Wall",
-          "Path"
+          "Path",
+          "Path",
+          "Check",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall"
+      ],
+      [
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall"
       ]
   ],
   "Collectibles":{
-      "Life":[
-          {
-              "x":7.4,
-              "y":13.5
-          },
-          {
-              "x":1.4,
-              "y":3.5
-          }
-      ],
       "Key":[
           {
-              "x":0.5,
-              "y":11.5
+              "x":13.3,
+              "y":14.4
+          },
+          {
+              "x":14.4,
+              "y":6.7
+          }
+      ],
+      "Life":[
+          {
+              "x":12.7,
+              "y":9.5
+          },
+          {
+              "x":14.2,
+              "y":5
+          },
+          {
+              "x":2,
+              "y":13.3
+          }
+      ],
+      "Invert":[
+          {
+              "x":3.3,
+              "y":7.5,
+              "duration":3000
           }
       ],
       "Visibility":[
           {
-              "x":12.5,
-              "y":14.5,
-              "duration":4000,
-              "difference":1
-          },
+              "x":6.6,
+              "y":4.6,
+              "duration":3000,
+              "difference":2
+          }
+      ],
+      "Speed":[
           {
-              "x":10.5,
-              "y":5.4,
-              "duration":4000,
-              "difference":1
-          },
-          {
-              "x":7.5,
-              "y":1.5,
-              "duration":4000,
-              "difference":1
+              "x":9.5,
+              "y":6.2,
+              "duration":3000,
+              "multiplier":5
           }
       ]
   },
   "Traps":{
       "Lasergate":[
           {
-              "x":6.1,
-              "y":9.8,
-              "endx":6.1,
-              "endy":7.2,
-              "on":7000,
-              "off":4000
+              "x":8,
+              "y":7.7,
+              "endx":8,
+              "endy":10.2,
+              "on":2000,
+              "off":3000
           },
           {
-              "x":6.2,
-              "y":9.9,
-              "endx":8.8,
-              "endy":9.9,
-              "on":5000,
-              "off":4000
-          },
-          {
-              "x":6.2,
-              "y":7.1,
-              "endx":8.8,
-              "endy":7.1,
-              "on":2500,
-              "off":6000
-          },
-          {
-              "x":8.9,
-              "y":7.2,
-              "endx":8.9,
-              "endy":9.8,
-              "on":3500,
-              "off":5000
+              "x":9.2,
+              "y":7.8,
+              "endx":9.2,
+              "endy":10.2,
+              "on":2000,
+              "off":3000
           }
       ]
   },
@@ -334,40 +362,24 @@
       "Patroler":[
           [
               {
-                  "x":3.5,
-                  "y":0.5
+                  "x":2.7,
+                  "y":2.4
               },
               {
-                  "x":3.5,
-                  "y":5.5
+                  "x":2.6,
+                  "y":13.6
               },
               {
-                  "x":3.5,
-                  "y":5.5
+                  "x":13.6,
+                  "y":13.6
               },
               {
-                  "x":5.5,
-                  "y":5.5
+                  "x":13.6,
+                  "y":2.5
               },
               {
-                  "x":5.5,
-                  "y":5.5
-              },
-              {
-                  "x":5.5,
-                  "y":0.5
-              },
-              {
-                  "x":5.5,
-                  "y":0.5
-              },
-              {
-                  "x":3.5,
-                  "y":0.5
-              },
-              {
-                  "x":3.5,
-                  "y":0.5
+                  "x":2.5,
+                  "y":2.5
               }
           ]
       ]
